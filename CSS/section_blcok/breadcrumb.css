@@ -1,0 +1,65 @@
+/* 麵包屑 */
+.breadcrumbList {
+  margin-top: 30px;
+  margin-left: 80px;
+}
+
+.breadcrumb li {
+  padding: 10px 20px 10px 0px;
+}
+
+.breadcrumb li a {
+  color: var(--non-notice-color);
+}
+
+.breadcrumb li+li::before {
+  content: "/";
+  /* //+選取器，選到自己的下一層元素 */
+  padding-right: 20px;
+}
+
+.breadcrumbList li:last-child a {
+  color: var(--notice-color);
+  font-weight: 100;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: var(--fw-B-700);
+}
+
+.breadcrumbList li:hover a {
+  color: var(--notice-color);
+}
+
+
+.tagSpan {
+  margin-left: -45px;
+  margin: 35px 0 20px -45px;
+  display: inline-flex;
+}
+
+.tagSpan span {
+
+  font-size: 1rem;
+  font-weight: 300;
+  margin-right: 1.25rem;
+  line-height: 1.25rem;
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: 1px solid var(--non-notice-color);
+  background-color: var(--body-color);
+  color: var(--black-color);
+}
+
+.tagSpan span:last-child {
+  margin-right: 0px;
+}
+
+.tagSpan span:hover {
+  background-color: var(--notice-color);
+  color: var(--body-color);
+}
+
+
+.newsEvent ol.breadcrumb{
+  margin-left: -40px;
+}

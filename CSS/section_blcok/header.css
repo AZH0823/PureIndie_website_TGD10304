@@ -1,0 +1,144 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;    
+    z-index: 999;
+    height: 90px;
+    font-size: var(--CHfs-20px);
+    font-weight: normal;
+    background-color: #fff;
+    box-shadow: 5px 0px 5px rgba(65, 65, 65, 0.414);
+    font-weight: var(--fw-SB-600);
+}
+/*定義左邊logo 及 四個LI */
+.header-navList{
+   float:left;
+   align-items: center;
+}
+/* 每一個li 寬度 */
+.header-navList > li{
+    box-sizing: border-box;
+    margin-right: 5px;
+    /* 定義寬度 */
+    flex-basis: 140px;
+    flex-shrink: 0;
+    margin-top: 15px;
+    padding: 20px 15px;
+    text-align: center;
+    position: relative;
+}
+
+/* logo 圖片處理 */
+
+.header .logo{
+    float: left;
+    height: 80px;
+    
+}
+.header .logo img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+ .header-navList li a{
+    color:var(--black-color);
+    display: block;
+} 
+
+/* news hover && hedaer li 底下有底線動畫 */
+
+.header-navList > li::after{
+    content: "";
+    width: 0%;
+    height: 5px;
+    /* left: calc(100% - 130px); */
+    left: 0;
+    bottom: -10%;
+    position: absolute;
+    background-color: var(--notice-color);
+}
+.header-navList>li:hover::after{
+    width: 100%;
+    transition: .5s all; 
+}
+
+/* header li 滑過字體會變色 */
+.header-navList li:hover> a,.news:hover h3.news-title{
+    color:#EE923C;
+}
+
+.news .news-title{
+    cursor: pointer;
+    color:var(--black-color);
+}
+.header-navList li:hover .news-List{
+    display: block;
+}
+/* news 下拉選單 */
+.news-List  {
+    display: none;    
+    position: absolute;
+    box-sizing:content-box;
+    
+    width: 100%;
+    top: 110%;
+    left: 0%;
+    text-align: center;
+    color:black;
+    background-color: #fff;
+    
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.263);
+    border: 2px solid rgba(204, 204, 204, 0.352) ;
+    
+    /* display: block; */
+}
+/* 下拉選單HOVER 效果 */
+.news-List li:hover a{
+    color: white;
+    background-color: #EE923C;
+}
+.news-List a{
+    padding: 10px 0;
+    color: white;
+}
+
+.tool-icon{
+    float: right;
+    margin: 12px 0;
+    column-gap: 25px;
+    font-size: 1.5em;
+    cursor: pointer;
+    list-style: none;
+}
+.tool-icon i{
+    display: block;
+    line-height: 43px;
+    padding:0.625rem 1.125rem;
+    color:var(--black-color);
+    position: relative;
+}
+.tool-icon i.fa-magnifying-glass{
+    display: block;
+    border-radius: 5px;
+    width: 20px;
+
+}
+/* 右邊icon hover 效果 */
+.tool-icon i:hover {
+    color: var(--notice-color);
+}
+
+.tool-icon i::after{
+    content: "";
+    width: 0%;
+    height: 5px;
+    left: 0%;
+    bottom: -10%;
+    position: absolute;
+    background-color: var(--notice-color);
+}
+.tool-icon i:hover::after{
+    width: 100%;
+    transition: .5s all; 
+}

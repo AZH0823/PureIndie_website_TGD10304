@@ -1,0 +1,214 @@
+.big-wide-banner{
+    background: linear-gradient(black,rgb(11, 11, 84));
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.about-banner{
+    margin-top: 80px;
+}
+.about-banner-titles{
+    color:var(--body-color);
+    padding: 30px 60px;
+}
+
+.about-banner .ch-title{
+    width: 65%;
+    line-height: 1.4em;
+    margin-bottom: 50px;
+    position: relative; 
+}
+.ch-title::after{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    background-color: var(--body-color);
+
+}
+.about-banner .ch-title h1{
+    font-size: 60px;
+    font-weight: Bold;
+}
+
+.about-banner .ch-title h2{
+   font-size: 48px; 
+}
+
+.eng-title{
+    font-size: 30px;
+    position: relative;
+}
+.eng-title a {
+    position: absolute;
+    bottom: 0;  
+    right: 0;
+    font-size: .6em;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color:white;
+}
+.eng-title a:hover{
+    background-color: red;
+}
+
+/* 專輯區 */
+.about-banner-ablumns{
+    /* outline: 2px solid goldenrod; */
+    width: 100%;
+    height: 1000px;
+    margin: 50px auto;
+    
+    position: relative;
+    /* perspective: 500px; */
+}
+
+
+
+.ablumn img{
+    width: 100%;
+    height: auto;
+}
+
+/* 翻牌大小 與 訂位 */
+.box1.ablumn{
+    width: 360px;
+    height: 360px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.box2.ablumn{
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    left: calc(0% + 50px);
+    top: 0%;  
+}  
+.box3.ablumn{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: calc(0% + 360px);
+    top: calc(50% - 120px );  
+}
+.box4.ablumn{
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    left: calc(50% - 100px);
+    bottom: 20px;  
+}
+
+.box5.ablumn{
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    right: calc(0% + 32px);
+    bottom: calc(10% + 30px);
+}
+.box6.ablumn{
+    width: 480px;
+    height: 480px;
+    position: absolute;
+    right: calc(10% + 30px);
+    top: calc(10% - 0px);
+}
+
+
+
+/* 翻牌細節設定 */
+.about-banner-ablumns .flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.about-banner-ablumns .ablumn  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+
+  
+ .about-banner-ablumns .ablumn:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    transition:transform .6s ease-in-out;
+  }
+  
+ .about-banner-ablumns .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .about-banner-ablumns .flip-card-front {
+	width: 100%;
+    height: 100%;
+  	/* background-color: #bbb; */
+  	/* color: black; */
+}
+
+.about-banner-ablumns .flip-card-front img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+   
+}
+.about-banner-ablumns .flip-card-back img{
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+  
+    top: 0%;
+    left: 0%;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    /* transform: scale(0.8); */
+    border-radius: 50%;
+}
+
+.about-banner-ablumns .flip-card-back h1{
+    font-size: 50px;
+    margin: calc(50% - 25px) 0;
+   
+    text-shadow: 0 0 10px var(--liner-color2),
+                 0 0 10px var(--liner-color2),
+                 0 0 10px var(--liner-color2),
+                 0 0 10px var(--liner-color2);
+      
+}
+.about-banner-ablumns .flip-card-back a{
+    display: block;
+    position: absolute;
+    color:var(--body-color);
+    padding: 5px 10px;
+    text-decoration: underline;
+    font-size: 30px;    
+    right: 10%;
+    bottom: 10%;
+
+    
+}
+.about-banner-ablumns .flip-card-back a:hover{
+    background-color:var(--liner-color2);
+    border-radius: 25px;
+    color:var(--body-color);
+}
+.about-banner-ablumns .flip-card-back {
+  background-color: var(--notice-color);
+  color: var(--body-color);
+  transform: rotateY(180deg);
+}
+  
+

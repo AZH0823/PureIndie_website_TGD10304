@@ -1,0 +1,171 @@
+.newActivy{
+  column-gap: 2rem;
+}
+
+.newActivy .newstions h1{
+  margin-left: 2.2rem;
+  margin-bottom: 2.2rem;
+  position: relative;
+}
+
+/* 標題偽元素 */
+.newActivy .newstions h1::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  background-color: var(--notice-color);
+  width: 120px;
+  height: 10px;
+}
+.newActivy .newstions h1::after{
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: -14px;
+  background-color: var(--notice-color);
+  width: 330px;
+  height: 6px;
+  opacity: 0.3;
+}
+
+/* 最新活動List */
+
+.newstList{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.newstList-card{
+  flex-basis: 300px;
+  width: 850px;
+  margin-left: 2.2rem;
+  /* text-align: right; */
+  overflow: hidden;
+  border:1px solid var(--non-notice-color);
+  border-radius: 3px;
+  background-color: var(--body-color);
+  filter: grayscale(100%);
+
+  transition: filter .35s ease-in-out;
+
+}
+.newstList-card:hover {
+  filter: grayscale(0%);
+}
+.newstList-card:hover h2{
+  color: var(--liner-color2);
+}
+.newstList-card img{
+  float: left;
+  display: block;
+  margin-right: 2rem;
+  margin-top: 1.25rem;
+  margin-left: .9rem;
+  border-radius: 3px;
+
+}
+.newstList-card .card-loream{
+  padding: 20px 20px 20px 20px;
+}
+.card-loream{
+  float: left;
+  width: calc(100% - 500px);
+  overflow: hidden;
+}
+.card-loream >span{
+  display: inline-block;
+  text-align: right;
+  margin: 10px 0 10px 22%;
+  color:var(--non-notice-color)
+}
+.card-loream p{
+  margin-bottom: 2rem;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.card-loream .newstList-icons{
+  text-align: right;
+  cursor: pointer;
+}
+
+
+.card-loream .newstList-icons a{
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: .8rem;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background: var(--body-color);
+
+  box-shadow:
+      rgb(60 64 67 / 30%) 0px 1px 2px 0px,
+      rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+}
+.card-loream .newstList-icons a:last-child{
+  margin-right: 0;
+}
+
+.card-loream .newstList-icons a:hover{
+  background-color: var(--notice-color);
+  color: var(--body-color);
+}
+
+.card-loream .newstList-icons a:active{
+  background-color: var(--liner-color2);
+  color: var(--body-color);
+}
+
+
+/* 排行板 */
+.toplists{
+  /* outline: 2px solid red; */
+  width:90%;
+  /* padding: 0px 10px 0px  20px; */
+  margin: 0 1.5rem;
+}
+.toplists li{
+  display: grid;
+  font-size: var(--CHfs-22px);
+  font-weight: var(--fw-B-700);
+  color: var(--black-color);
+  padding: 10px 0;
+  grid-template-columns: 1.5fr 1fr 10fr;
+  padding-left: 2rem;
+}
+.toplists li:nth-child(odd){
+  background-color:var(--body-color);
+}
+.toplists li:nth-child(even) {
+  background-color: var(--non-notice-color);
+
+}
+.toplists li:hover{
+  background-color: var(--notice-color);
+}
+.toplists span.title{
+  /* 標題過長  */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; 
+
+  color: var(--non-notice-color);
+}
+.toplists span.title a{
+  color:var(--black-color);
+
+}
+.toplists span.title a:hover{
+  color: var(--body-color)
+}
+
+
+

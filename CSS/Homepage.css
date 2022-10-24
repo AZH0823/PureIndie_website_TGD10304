@@ -1,0 +1,56 @@
+@import url(./reset.css);
+@import url(./rootManger.css);
+@import url(./section_blcok/header.css);
+@import url(./section_blcok/footer.css);
+@import url(./section_blcok/big-wide-banner.css);
+@import url(./section_blcok/sider-wide-banner.css);
+@import url(./section_blcok/motion.css);
+@import url(./section_blcok/band-top.css);
+@import url(./section_blcok/activity-list.css);
+@import url(./section_blcok/socal-commit.css);
+@import url(./section_blcok/wanted.css);
+/* 共用display */
+
+body{
+    font-size: 50px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5),
+                rgba(255, 255, 255, 0.5)),
+            url(../img/texture/body_bg.png);
+}
+
+
+.fuild-contanier{
+    width: 100%;
+}
+.wrap{
+    max-width: 1440px;
+    margin: 0 auto;
+    /* outline: 2px solid yellow; */
+}
+
+
+.d-flex{
+    display: flex; 
+}
+.d-flex-inline{
+    display: inline-flex;
+}
+.b-shadow{
+    box-shadow:
+    rgb(60 64 67 / 30%) 0px 1px 2px 0px,
+    rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    border-radius:5px;
+    overflow: hidden;
+}
+section{
+    padding: 60px 0;
+    border-bottom:1.5px solid #ccc ;
+    
+}
+
+
+
+/* a,i{
+    display: block;
+    color:var(--black-color)
+} */

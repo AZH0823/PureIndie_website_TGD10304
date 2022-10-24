@@ -1,0 +1,155 @@
+/* player定位 */
+#media-player{
+    position:fixed;
+    bottom: 50%;
+    right: 50%;
+    width: 430px;
+    height: 100px;
+           
+}
+#player{
+    height: 100%;
+    z-index: 3;
+    position: relative;
+}
+
+/* 開始撥上半部 */
+#player-track{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    left: 15px;
+    padding: 13px 22px 10px 184px;
+    background: linear-gradient(180deg,
+                         rgba(249, 35, 112, 0.8) 0%,
+                         rgba(238, 146, 60, 0.728) 52.76%);
+    border-radius: 15px 15px 0 0;
+    transition: 0.3s ease top;
+    font-size:var(--CHfs-14px);
+    color:var(--body-color);
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+}
+#player-track>*{
+    margin: 10px 0;
+}
+/* 點及播放鍵 - 上半部出現*/
+#player-track.active {
+    top: -100px;
+}
+#track-name{
+    font-size: 1rem;
+}
+#band-name{
+    opacity: 0.65;
+}
+#time{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+#time>span{
+    opacity: .5;
+}
+
+
+input[type='range'] {
+overflow: hidden;
+width: 115px;
+-webkit-appearance: none;
+background-color: var(--body-color);
+border-radius: 5px;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+height: 10px;
+-webkit-appearance: none;
+color: red;
+border-radius: 50%;
+margin-top: -1px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+width: 10px;
+-webkit-appearance: none;
+height: 10px;
+/* cursor: ew-resize; */
+background: var(--body-color);
+box-shadow: -80px 0 0 80px var(--notice-color);
+border-radius: 5px;
+}
+#player-content{
+    position: relative;
+    height: 100%;
+    padding: 10px 15px;
+    background-color: #fff;
+    box-shadow: 0 20px 50px #656565;
+    border-radius: 15px;
+    z-index: 2;
+}
+#player-control{
+    width: 250px;
+    height: 100%;
+    margin: 0 5px 0 141px;
+    float: right;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#ablumn-cover{
+    position: absolute;
+    top: -40px;
+    width: 115px;
+    height: 115px;
+    margin-left: 20px;
+    transform: rotateZ(0deg);
+    transition: 0.3s ease all;
+    box-shadow: 0 0 0 10px var(--body-color), 0 0 20px 10px #00000066;
+    border-radius: 50%;
+    overflow: hidden;
+}
+/* 中間空洞 */
+#ablumn-cover::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    margin: -10px auto 0 auto;
+    background-color: #d6dee7;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 2px #fff;
+    z-index: 2;
+}
+#ablumn-cover img{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.control{
+    font-size: 40px;
+    color:var(--non-notice-color);
+    /* float: left; */
+    padding: 16px 22px;
+    border-radius: 5px;
+}
+.control:hover{
+    background-color: var(--notice-color);
+}
+.control:hover i{
+    color:white
+}
+.control:active{
+    background-color: var(--active-color);
+}

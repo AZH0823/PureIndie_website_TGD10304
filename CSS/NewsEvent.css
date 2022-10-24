@@ -1,0 +1,77 @@
+@import url(./reset.css);
+@import url(./rootManger.css);
+@import url(./section_blcok/header.css);
+@import url(./section_blcok/footer.css);
+@import url(./section_blcok/wide-banner.css);
+@import url(./section_blcok/breadcrumb.css);
+@import url(./section_blcok/newscardandToplist.css);
+@import url(./section_blcok/recommend.css);
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)),
+    url(../img/texture/body_bg.png);
+}
+
+
+.fuild-contanier {
+  width: 100%;
+}
+
+.wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  outline: 2px solid yellow;
+}
+
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex-inline {
+  display: inline-flex;
+}
+
+.b-shadow {
+  box-shadow:
+    rgb(60 64 67 / 30%) 0px 1px 2px 0px,
+    rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+ 
+}
+
+section {
+  content: "";
+  padding: 30px 0;
+  /* outline: 2px solid yellow; */
+}
+
+main.newsEvent h1{
+  font-size: var(--CHfs-28px);
+  font-weight: var(--fw-B-700);
+  color:var(--notice-color)
+}
+main.newsEvent h2{
+  font-size: var(--CHfs-22px);
+  font-weight: var(--fw-B-700);
+  color:var(--black-color);
+}
+
+main.newsEvent p{
+  font-size: 1rem;
+  color: var(--black-color);
+  font-weight: var(--fw-N-400);
+  line-height: 1.6rem;
+}
+.footer p{
+  color: var(--body-color);
+}
+.footer {
+  font-size: 16px;
+  color: var(--body-color);
+  font-weight: var(--fw-L-300);
+}

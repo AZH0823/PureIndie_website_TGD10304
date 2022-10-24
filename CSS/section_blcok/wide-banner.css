@@ -1,0 +1,14 @@
+
+.wide-banner{
+  height: 560px;
+  background-image: url(../../img/Aboutus/wideBanner_aboutus.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  color:var(--black-color);
+  
+}
+
+
+
+

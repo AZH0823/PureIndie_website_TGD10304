@@ -1,0 +1,136 @@
+.socal-commit{
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.1; 
+  padding: 50px 0px;
+  justify-content: center;
+  background: var(--notice-color);
+}
+.activity-title h2{
+  color: var(--body-color);
+}
+.commit-users{
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+}
+.user{
+  align-items: center;
+
+}
+/* 尚未點擊的 4 個此用者icon 大小 */
+.user.non-active .user-content {
+  display: none;
+  margin-right: 0px;
+  padding: 40px 80px;
+  z-index: 1;
+  padding-left: 100px;
+  width: 0px;
+  transition:width 1.5s 3s ease-in-out;
+
+}
+.user.non-active .userLogo{
+  width: 70px;
+  filter: grayscale(80%);
+  transition: .3s;
+}
+
+/* user 大頭貼 */
+.userLogo{
+  flex-grow: 0;
+  font-size: 0;
+  border-radius: 50%;
+  border: 10px var(--body-color);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  overflow: hidden;
+  transition:all .15s linear;
+
+}
+
+.user.non-active .userLogo:hover{
+  transform: scale(1.2);
+  filter: grayscale(0%);
+  transition: .35s ease-out;
+}
+.userLogo img{
+  border-radius: 50%;
+  width: 100%
+}
+/* user 內文 */
+.user .user-content{
+  box-sizing: border-box;
+  background-color: white;
+  
+  /* flex-grow: 1;
+  transition: flex-grow .5s ease-in; */
+}
+/* 點擊到icon 畫面比例變大 */
+/* user-icon 頭像 */
+.user.active .userLogo{
+  margin-right: -80px;
+  z-index: 2;
+  transition: 1.2s;
+}
+.user.active .user-content{
+    padding: 40px 80px;
+    z-index: 1;
+    padding-left: 100px;
+    width: 500px;
+    transition: width 2s;
+}
+
+.user-content .user-info{
+  margin-left: -50px;
+  padding-left: 50px;
+  color: var(--black-color);
+  padding:10px 20px 10px 50px;
+  position: relative;
+}
+.user-info::before{
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 75%;
+  bottom: 0;
+  background-color: var(--non-notice-color);
+}
+/* 使用者人名 */
+.user-content .user-info h3{
+  font-weight: 800;
+  
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+/* 使用者發布時間 */
+.user-content .user-info span{
+  color:var(--non-notice-color);
+  text-decoration: underline;
+}
+/* 使用者發布P段落文章 */
+.user-lorem p{
+  color: black;
+  
+  text-indent: 24px;
+  text-align: justify;
+  line-height: 1.2;
+  margin: 20px 0;
+  line-height: 1.4;
+}
+.user-content .stars{
+  font-size: 25px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.user-content .stars span{
+  text-indent: 5px;
+}
+.user-content .stars i{
+  color:var(--notice-color)
+}
+
+.user-content .stars span:hover i{
+  cursor: pointer;
+  transform: scale(1.15);
+}

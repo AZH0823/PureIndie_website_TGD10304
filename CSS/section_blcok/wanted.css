@@ -1,0 +1,216 @@
+.wanted-song{
+  font-size: var(--CHfs-22px);
+}
+.silderAll{
+  /* outline: 5px red solid;  */
+  position: relative;
+}
+.slider-control{
+  width: 100%;
+  top: 50%;
+  position: absolute;
+}
+.slider-control .silder-btn{
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  color:var(--body-color);
+  height: 50px;
+  width: 25px;
+  transform: translateY(-50%);
+  top: 50%;
+  right: 0;
+  background-color: var(--non-notice-color);
+}
+.silder-btn.pre{
+  left: 0;
+}
+.silder-btn:hover{
+  background-color: var(--active-color);
+}
+
+.wanted-lists{
+  justify-content: center;
+  gap: 50px;
+  padding: 30px 20px;
+}
+
+
+
+/* 大家都愛聽的Section 標題 */
+.wanted-song-title {
+  padding-left: 40px;
+  
+  min-width: 160px;
+  line-height: 1.2;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--black-color);
+  margin-bottom: 40px;
+}
+
+.wanted-song-title h2{
+  color: var(--black-color);
+  margin-bottom: 12px;    
+  font-size: var(--CHfs-28px);
+  font-weight: var(--fw-B-700);
+}
+
+.wanted-song-title p {
+
+  color:var(--non-notice-color);
+  font-size: var(--CHfs-16px);
+  font-weight: var(--fw-SB-600);
+}
+
+/* 專輯LIST 整個寬度 */
+li.wanted-listcard{
+  box-sizing: border-box;
+  width: 30%;
+  min-width: 320px;
+  padding: 10px;
+  border: 2px solid var(--non-notice-color);
+  background-color: var(--body-color);
+  color:var(--black-color);
+  border-radius: 15px;
+}
+
+
+
+
+/* 專輯左圖設定 */
+.wanted-listcard .wanted-list-Img{
+  float: left;
+  margin-right: 18px;
+  max-width: 120px;
+  width: 30%;
+  height: 120px;
+  box-shadow:
+          rgb(60 64 67 / 30%) 0px 1px 2px 0px,
+          rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+  border-radius:5px;
+  overflow: hidden;
+}
+.wanted-list-Img img{
+  font-size: 0;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+/* 專輯右邊資訊 */
+.wanted-listcard .wanted-list-ablumn{
+  width:calc(420px- 30%);
+  box-sizing: border-box;
+  float: left;
+  line-height: 1.7rem;
+ 
+}
+.wanted-listcard .ablumn{
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 20px 5px;
+  border-bottom:3px solid var(--non-notice-color) ;
+}
+.wanted-list-ablumn h2{
+  font-size: var(--CHfs-18px);
+  font-weight: var(--fw-B-700);
+}
+.wanted-list-ablumn p{
+  font-size: var(--CHfs-16px);
+  font-weight: var(--fw-N-400);
+}
+.wanted-list-ablumn span{
+  font-size: 10px;
+  margin-left: 5px;
+  font-size: var(--CHfs-16px);
+  font-weight: var(--fw-B-700);
+  color:var(--black-color);
+  cursor: pointer;
+}
+
+.wanted-list-ablumn a{
+  display: block;
+  margin:10px 0;
+  padding: 0px 10px;
+  text-align: center;
+  font-size: 5px;
+  
+  border: 1px solid #D9D9D9;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  border-radius: 25px;
+}
+.wanted-list-ablumn a:nth-child(1){
+  background: var(--body-color);
+  color: var(--black-color);
+}
+
+.wanted-list-ablumn a:hover{
+  background-color: var(--notice-color);
+}
+
+.wanted-list-ablumn a:hover>*{
+  color:var(--body-color)
+  
+}
+
+/* 最新評論 */
+
+.newestPublished-title{
+  color:var(--black-color);
+  
+}
+.wanted-listcard .watend-list-newestPublished{
+  
+  clear: both;
+  padding: 12px 20px;
+  
+}
+
+/* 熱門評論 */
+.watend-list-newestPublished .watend-list-menber{
+  font-size: var(--CHfs-14px);
+  font-weight: 600;
+}
+.watend-list-menber h3{
+  padding: 10px 10px;
+  display: inline-block;
+  background: var(--notice-color);
+  color:var(--body-color);
+  
+  border: 1px solid #D9D9D9;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  border-radius: 10px;
+ 
+}
+.watend-list-menber p{
+  text-indent: 2rem;
+  font-size: var(--CHfs-16px);
+  margin: 20px 0;
+  color: var(--black-color)
+}
+
+.acount-info{
+  display: inline-block;
+  text-align: right;
+  width: 100%;
+}
+
+/* 右下角人物ICON */
+.acount-info>*{
+  display: inline-block;
+  line-height:30px;
+  width: 80%;
+  text-align: right;
+}
+.acount-info .user-logo{
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+}
+.user-logo img{
+  object-fit: cover;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
