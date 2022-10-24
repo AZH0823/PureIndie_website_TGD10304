@@ -47,7 +47,7 @@
   border:1px solid var(--non-notice-color);
   border-radius: 3px;
   background-color: var(--body-color);
-  filter: grayscale(100%);
+  filter: grayscale(50%);
 
   transition: filter .35s ease-in-out;
 

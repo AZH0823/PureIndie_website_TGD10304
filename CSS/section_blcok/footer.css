@@ -1,5 +1,14 @@
 .footer {
     font-size: 16px;
+    color: var(--body-color);
+    font-weight: var(--fw-L-300);
+}
+
+.footer {
+    font-size: 16px;
+}
+.footer p {
+    color: var(--body-color);
 }
 .fuild-contanier.footer{
     background: linear-gradient(rgba(54, 54, 54, 0.5),

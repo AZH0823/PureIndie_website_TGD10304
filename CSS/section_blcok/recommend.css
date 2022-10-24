@@ -61,7 +61,7 @@
   border: 1px solid var(--non-notice-color);
   overflow: hidden;
 
-  filter: grayscale(100%);
+  filter: grayscale(50%);
   transform: translateY(-0px);
   transition: .35s;
 }
