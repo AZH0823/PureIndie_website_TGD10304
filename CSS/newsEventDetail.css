@@ -113,11 +113,6 @@ main.newsEventDetail h2 {
 }
 
 .news-ImgBox{
-  outline: 2px solid red;
-  margin-top: 85px;
-  padding-left: 80px;
-}
-.news-ImgBox{
   display: block;
   margin: 50px auto;
   width: auto;
