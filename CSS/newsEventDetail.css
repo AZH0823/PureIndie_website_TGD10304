@@ -99,6 +99,9 @@ main.newsEventDetail h2 {
 .socail-list-icons a:last-child{
   border-radius: 30px;
 }
+.socail-list-icons >a{
+  text-decoration: none;
+}
 .socail-list-icons a:hover {
   background-color: var(--notice-color);
 }
@@ -108,30 +111,153 @@ main.newsEventDetail h2 {
   font-size: 30px;
   color: var(--black-color);
 }
+.socail-list-icons span{
+  
+  font-size: 22px;
+  color: var(--black-color);
+}
+
 .socail-list-icons a:hover i{
   color:var(--body-color);
 }
+.socail-list-icons a:hover span{
+  color:var(--body-color);
+}
+
 
 .news-ImgBox{
   display: block;
   margin: 50px auto;
   width: auto;
 }
-.news-ImgBox .box{
-  margin: auto;
+/* 裝飾線 */
+/* 圖片 */
+.news-detail .box{
+  /* outline: 2px solid red ; */
   width: 90%;
+  margin: 50px auto;
 }
 .news-ImgBox img{
-  outline: 2px yellow solid;
-  max-width: 100%;
-  max-height : 100%;
+  /* outline: 2px yellow solid; */
+  width: 100%;
+  height : 100%;
   object-fit: cover;
 }
-
+/* 記者文字 */
 .reporter{
   
   display: block;
   text-align: right;
-  margin-right: 7rem;
+  margin: 1rem 2rem 2rem 0px ;
   line-height: 1.3rem;
+  font-weight: 600;
 }
+
+/* 報導內文 */
+#news-txt{
+  padding: 50px 36px 50px 120px;
+  line-height: 1.85;
+  text-indent: 3rem;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+/* 裝飾線 */
+#news-txt{
+  position: relative;
+}
+#news-txt .decos:first-child::before{
+  content: '';
+  height: 10px;
+  width: 250px;
+  position: absolute;
+  top: -4px;
+  right: 0;
+  background-color: var(--notice-color);
+}
+#news-txt .decos:first-child:after{
+  content: '';
+  position: absolute;
+  width: 850px;
+  top: -2px;
+  right: 0;
+  height: 6px;
+  background-color: var(--notice-color);
+  opacity: 0.3;
+}
+#news-txt .decos:last-child::before{
+  content: '';
+  height: 10px;
+  width: 200px;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--notice-color);
+}
+#news-txt .decos:last-child::after{
+  content: '';
+  height: 6px;
+  width: 850px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--notice-color);
+  opacity: 0.3;
+
+}
+
+#news-txt p+p{
+  margin-top: 40px;
+}
+
+
+/* 留言板區 */
+.message.card{
+  width: 1100px;
+  height: 420px;
+  border: 1px var(--non-notice-color);
+  text-align: right;
+  box-shadow:
+      rgb(60 64 67 / 30%) 0px 1px 2px 0px,
+      rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+}
+.message.box{
+  outline: 2px salmon solid;
+
+}
+.message-own{
+  align-items: center;
+}
+
+.message-own input[type="text"]{
+  padding: 10px;
+  border: 2px solid var(--non-notice-color);
+  border-right: 0px;
+  border-radius: 10px 0px 0px 10px;
+}
+.message-own .input span{
+  padding: 11.5px;
+  border: 2px solid var(--non-notice-color);
+  margin-left: -4px;
+  border-left: 0px;
+  font-size: 11px;
+  border-radius: 0px 10px 10px 0px;
+}
+.message-own .input span:hover{
+  background-color: var(--notice-color);
+  color: var(--body-color);
+}
+.message-own .input span:active{
+  background-color: var(--active-color);
+  color: var(--body-color);
+}
+.message-own .input input:focus{
+  /* border: 0px; */
+  outline:none;
+}
+  
+
+
+
+

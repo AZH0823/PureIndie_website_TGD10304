@@ -47,6 +47,11 @@ section{
     border-bottom:1.5px solid #ccc ;
     
 }
+.message-own{
+    outline: yellow solid 4px;
+    justify-items: center;
+    align-items: center;
+}
 
 
 
