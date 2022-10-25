@@ -208,6 +208,13 @@ li.wanted-listcard{
   height: 50px;
   margin-left: 5px;
 }
+.acount-info a{
+  color:var(--black-color);
+}
+.acount-info a:hover{
+  background-color: var(--notice-color);
+  color:var(--body-color);
+}
 .user-logo img{
   object-fit: cover;
   border-radius: 50%;

@@ -13,12 +13,10 @@
 
 body{
     font-size: 50px;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5),
-                rgba(255, 255, 255, 0.5)),
+    background-image: linear-gradient(rgba(224, 224, 224, 0.8),
+                rgba(255, 255, 255, 0.3),90deg),
             url(../img/texture/body_bg.png);
 }
-
-
 .fuild-contanier{
     width: 100%;
 }
