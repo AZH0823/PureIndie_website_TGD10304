@@ -22,7 +22,7 @@ body {
 .wrap {
   max-width: 1440px;
   margin: 0 auto;
-  outline: 2px solid yellow;
+  /* outline: 2px solid yellow; */
 }
 
 
@@ -77,6 +77,7 @@ main.newsEventDetail h2 {
   background-color: var(--notice-color);
   color:var(--body-color);
 }
+
 .socail-list-icons{
   
   text-align: right;
@@ -112,7 +113,6 @@ main.newsEventDetail h2 {
   color: var(--black-color);
 }
 .socail-list-icons span{
-  
   font-size: 22px;
   color: var(--black-color);
 }
@@ -145,7 +145,6 @@ main.newsEventDetail h2 {
 }
 /* 記者文字 */
 .reporter{
-  
   display: block;
   text-align: right;
   margin: 1rem 2rem 2rem 0px ;
@@ -213,36 +212,75 @@ main.newsEventDetail h2 {
 
 
 /* 留言板區 */
+.message.box {
+}
 .message.card{
-  width: 1100px;
-  height: 420px;
-  border: 1px var(--non-notice-color);
-  text-align: right;
+  padding: 35px;
+  border: 1px var(--non-notice-color) solid;
+  border-radius: 5px;
+  margin-left: 15%;
+  
+  background-color:var(--body-color);
   box-shadow:
       rgb(60 64 67 / 30%) 0px 1px 2px 0px,
       rgb(60 64 67 / 15%) 0px 2px 6px 2px;
 }
-.message.box{
-  outline: 2px salmon solid;
-
-}
-.message-own{
+.message-own {
+  /* outline:2px solid red; */
+  padding: 10px 8px;
   align-items: center;
+  position: relative;
+  border-radius: 5px;
+  background-color: var(--notice-color);
+}
+.message.box .img {
+  max-width: 100px;
+  margin-right: 1.5rem;
+  border-radius: 50%;
 }
 
+.message-own img {
+  display: block;
+  max-width: 100%;
+}
+.message-own::after{
+  content: '';
+  position: absolute;
+  left: 0%;
+  bottom: -10%;
+  height: 2px;
+  width: 95%;
+  background-color: var(--non-notice-color);
+}
+
+.input{
+  width: 100%;
+  min-width: 240px;
+}
 .message-own input[type="text"]{
-  padding: 10px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: calc(100% - 94px);
+ 
+  padding: 10px 10px 10px 1.5rem;
   border: 2px solid var(--non-notice-color);
   border-right: 0px;
+  height: 40px;
   border-radius: 10px 0px 0px 10px;
+  vertical-align: middle;
 }
 .message-own .input span{
-  padding: 11.5px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 11px;
+  height: 40px;
   border: 2px solid var(--non-notice-color);
+  background-color: var(--body-color);
   margin-left: -4px;
   border-left: 0px;
   font-size: 11px;
   border-radius: 0px 10px 10px 0px;
+  vertical-align: middle;
 }
 .message-own .input span:hover{
   background-color: var(--notice-color);
@@ -256,8 +294,43 @@ main.newsEventDetail h2 {
   /* border: 0px; */
   outline:none;
 }
+
+
+/* 其他留言 */
+.message-other{
+  margin-top: 2rem;
+  padding: 20px;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+}
+.message-other:after{
+  content: "";
+  height: 2px;
+  width: 95%;
+  position: absolute;
+  bottom: -10%;
+  background-color: var(--non-notice-color);
+}
+.message-txt{
+  text-align: center;
+  flex-grow: 1;
+}
+.message-other-tag{
   
 
+  align-self: flex-end;
+}
+
+.message-other a{
+  color:var(--black-color);
+}
+.message-other p+p{
+  margin-top: 0.8rem;
+}
+.message-other.d-flex .img{
+  max-width: 70px;
+}
 
 
 
