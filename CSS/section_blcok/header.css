@@ -46,6 +46,30 @@
     display: block;
 } 
 
+/* 目前Header 畫面填顏色 */
+
+/* 在活動消息,活動消息內文時 */
+.header-navList .news.nowPage>h3{
+    color: var(--body-color);
+}
+.header-navList .news.nowPage li a{
+    color: var(--black-color);
+}
+/* 在樂團介紹,關於我們,我的收藏頁面時 */
+.header-navList>li.nowPage{
+    background-color: var(--active-color);
+}
+.header-navList>li.nowPage a{
+    color: var(--body-color);
+}
+
+/* 在登入畫面 */
+.tool-icon a.nowPage{
+    background-color: var(--active-color);
+}
+.tool-icon a.nowPage i{
+    color: white;
+}
 /* news hover && hedaer li 底下有底線動畫 */
 
 .header-navList > li::after{
@@ -95,12 +119,15 @@
 }
 /* 下拉選單HOVER 效果 */
 .news-List li:hover a{
-    color: white;
-    background-color: #EE923C;
+    background-color:var(--notice-color);
+    color: var(--body-color);
+}
+.news.nowPage li:hover a{
+    color: var(--body-color);
 }
 .news-List a{
     padding: 10px 0;
-    color: white;
+    color: var(--body-color);
 }
 
 .tool-icon{

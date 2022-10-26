@@ -12,7 +12,7 @@
   font-weight: bold;
   color:var(--black-color)
 }
-.activity-title> h2{
+.activity-title .title{
   color: var(--black-color);
 }
 .activity-title .more{

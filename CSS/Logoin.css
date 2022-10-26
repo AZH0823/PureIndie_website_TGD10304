@@ -2,7 +2,7 @@
 @import url(./rootManger.css);
 @import url(./section_blcok/header.css);
 @import url(./section_blcok/footer.css);
-
+@import url(./section_blcok/breadcrumb.css);
 
 body {
   font-size: 50px;
@@ -11,7 +11,7 @@ body {
     url(../img/texture/body_bg.png);
 }
 .container {
-  height: 100vh;
+
 }
 
 .fuild-contanier {
@@ -47,8 +47,162 @@ section {
 
 }
 
-.message-own {
-  outline: yellow solid 4px;
-  justify-items: center;
+
+.login{
+ 
+}
+/* 註冊盒子 */
+.box{
+  margin: 0 auto;
+  /* width: 530px;
+  height: 640px; */
+  width: 30%;
+  background-color: var(--body-color);
+  border: 5px solid var(--notice-color);
+  border-radius: 30px;
+  min-width: 320px;
+}
+/* 登入 & 註冊大標籤 */
+.actwith{
+   text-align: center;
+   margin: 2rem 0;
+   /* outline: 2px solid red; */
+   position: relative;
+}
+/* 登入 & 註冊預設樣式 */
+.actwith a{
+  cursor: pointer;
+  display: inline-block;
+  font-size: var(--CHfs-26px);
+  font-weight: var(--fw-SB-600);
+  color: var(--black-color);
+  position: relative;
+}
+/* 點及登入 & 註冊樣式 */
+.actwith a.active{
+  color:var(--notice-color)
+}
+
+.actwith a::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0%;
+  height: 5px;
+  width: 0px;
+  border-radius: 5px;
+  background-color: var(--notice-color);
+
+  transition: all .5s;
+}
+.actwith a.active::after{
+  width: 60px;
+  transition: all 1s;
+}
+
+
+.createAccount #form-create,
+.loginAccount #form-login{
+  display: none;
+}
+
+.createAccount.active #form-create,
+.loginAccount.active #form-login{
+  display: block;
+  padding: 0px 60px 40px;
+  
+}
+
+.createAccount.active h1:nth-child(2)::after{
+  content: "";
+  height: 4px;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  background-color: var(--notice-color);
+}
+#form-login label,
+#form-create label {
+  display: block;
+  font-size: var(--CHfs-16px);
+  margin-top: 1rem;
+  font-weight: 400;
+    color: var(--non-notice-color);
+}
+#form-login input[type="text"],
+#form-login input[type="password"],
+#form-create input[type="text"],
+#form-create input[type="email"],
+#form-create input[type="password"]{
+  box-sizing: border-box;
+  min-width: 120px;
+  width: 100%;
+  border-radius: 3px;
+  padding: 10px 0 10px 15px;
+}
+#form-login input[type="text"]:focus,
+#form-login input[type="password"]:focus,
+#form-create input[type="text"]:focus,
+#form-create input[type="email"]:focus,
+#form-create input[type="password"]:focus{
+  outline: 2px solid var(--notice-color);
+  border: 0px;
+}
+
+.logoinWith{
+  text-align: center;
+  min-width: 150px;
+  margin: 2rem auto;
+  /* outline: 2px solid red; */
+
+}
+.logoinWith label{
+  font-weight: 800;
+  color: var(--non-notice-color);
+ }
+.logoinIcon{
+  display: flex;
+  justify-content: center;
   align-items: center;
+}
+.logoinIcon li:nth-child(2){
+  margin: 0 2rem;
+  font-size: var(--CHfs-18px);
+}
+
+.logoinIcon i{
+  font-size: 50px;
+  display: block;
+}
+.logoinIcon i:hover{
+  color:var(--notice-color);
+}
+.logoinIcon i:active{
+  color: var(--active-color);
+}
+
+
+div.create,
+div.logo-in{
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  min-width: 80px;
+  border: 0px;
+  margin: 0 auto;
+  padding: 10px 15px;
+  width: 30%;
+  border-radius: 5px;
+}
+ div.create:active,
+ div.logo-in:active{
+  background-color: var(--active-color);
+  color: var(--notice-color);
+}
+
+ div.create:hover,
+ div.logo-in:hover{
+  background-color: var(--notice-color);
+  color: var(--body-color);
 }
