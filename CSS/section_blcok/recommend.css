@@ -5,13 +5,7 @@
   margin-bottom: 2.2rem;
   position: relative;
 }
-.recommend h1:hover::after{
-  width: 380px;
-}
-.recommend h1:hover::before {
-  width: 380px;
-  transform: translateX(50px);
-}
+
 .recommend h1::before {
   content: '';
   position: absolute;
@@ -21,8 +15,6 @@
   width: 120px;
   height: 10px;
 
-  transform: translateX(0);
-  transition: .8s ease-in-out;
 }
 
 .recommend h1::after {
@@ -35,7 +27,6 @@
   height: 6px;
   opacity: 0.3;
 
-  transition: .5s ease-in-out;
 }
 
 

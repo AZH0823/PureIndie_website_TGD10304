@@ -1,0 +1,62 @@
+@import url(./reset.css);
+@import url(./rootManger.css);
+@import url(./section_blcok/header.css);
+@import url(./section_blcok/footer.css);
+@import url(./section_blcok/wide-banner.css);
+@import url(./section_blcok/breadcrumb.css);
+@import url(./section_blcok/filterSeacher.css);
+
+body{
+    font-size: 50px;
+    background-image: 
+                url(../img/texture/body_bg.png),
+                linear-gradient(rgba(224, 224, 224, 0.8),
+                rgba(255, 255, 255, 0.3));
+}
+.fuild-contanier{
+    width: 100%;
+}
+.wrap{
+    max-width: 1440px;
+    margin: 0 auto;
+    /* outline: 2px solid yellow; */
+}
+
+
+.d-flex{
+    display: flex; 
+}
+.d-flex-inline{
+    display: inline-flex;
+}
+.b-shadow{
+    box-shadow:
+    rgb(60 64 67 / 30%) 0px 1px 2px 0px,
+    rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    border-radius:5px;
+    overflow: hidden;
+}
+section{
+    padding: 60px 0;
+    /* border-bottom:1.5px solid #ccc ; */
+    
+}
+
+main.newsEvent h1{
+    font-size: var(--CHfs-28px);
+    font-weight: var(--fw-B-700);
+    color:var(--notice-color)
+}
+main.newsEvent h2{
+    font-size: var(--CHfs-22px);
+    font-weight: var(--fw-B-700);
+    color:var(--black-color);
+}
+  
+main.newsEvent p{
+    font-size: 1rem;
+    color: var(--black-color);
+    font-weight: var(--fw-N-400);
+    line-height: 1.6rem;
+}
+  

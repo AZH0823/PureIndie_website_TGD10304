@@ -1,0 +1,187 @@
+.seach-filiter{
+    box-sizing: border-box;
+    flex-basis: 420px;
+    width: 420px;
+    padding: 25px 20px 50px 20px;
+    /* outline: 2px solid red; */
+}
+.seach-filiter .music-kind,
+.seach-filiter .mood-kind{
+    margin-bottom: 30px;
+}
+.seach-filiter h1:after{
+    content: "";
+    height: 5px;
+    width: 100%;
+    background-color: var(--non-notice-color);
+    opacity: 0.3;
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+}
+.seach-filiter h1.title,.filter-list h1{
+    color: var(--notice-color);
+    font-size: var(--CHfs-28px);
+    font-weight: var(--fw-B-700);
+    color: var(--notice-color);
+    margin: 1rem 0px;
+    position: relative;
+}
+
+
+/* h1 摺疊選單 */
+.title.slideToggle{
+    cursor: pointer;
+    position: relative;
+}
+/* 摺疊選單預設偽元素樣式  */
+.title.slideToggle::before{
+    content: "-";
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    bottom: 0px;
+    right: 5px;
+    
+    transition: .3s;
+}
+.title.slideToggle:hover::before{
+    transform: scale(1.8);
+}
+/* 摺疊選單觸發由 - => +  */
+.title.slideToggle.active::before{
+    content: "+";
+}
+/* 搜尋標籤 */
+.seach-filiter li{
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+}
+.seach-filiter li > a{
+    display: block;
+    cursor: pointer;
+    padding: 10px 25px;
+    border-radius: 15px;
+    outline: 1px solid var(--non-notice-color);
+    box-shadow:
+    rgb(60 64 67 / 30%) 0px 1px 2px 0px,
+    rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+
+}
+
+.seach-filiter li:hover{
+    color: var(--body-color);
+    background-color: var(--notice-color);
+}
+.seach-filiter li:active{
+    
+    color: var(--body-color);
+    background-color: var(--active-color);
+}
+.seach-filiter li.checked{
+    color: var(--body-color);
+    background-color: var(--active-color);
+}
+
+
+
+/* 搜尋結果頁面 */
+.filter-list{
+    /* outline:2px green solid;  */
+    padding: 20px;
+
+    width: 220px;
+    flex-grow: 1;
+}
+.filter-list .title::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    background-color: var(--notice-color);
+    width: 250px;
+    height: 10px;
+}
+.filter-list .title::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -14px;
+    background-color: var(--notice-color);
+    width: 500px;
+    height: 6px;
+    opacity: 0.3;
+}
+
+/* 搜尋,推薦,熱排 UL Container*/
+.serch-final-lists,
+.recommond-lists,
+.hito-lists{
+    /* margin-top: 50px; */
+    flex-wrap: wrap;
+    padding: 25px 0;
+    gap: 25px;
+    
+    border-bottom: 1px solid var(--non-notice-color);
+    
+}
+/* 搜尋,推薦,熱排 flex-item */
+.serch-final-list,
+.recommond-list,
+.hito-list{
+    border-radius: 3px;
+    border: 1px solid var(--non-notice-color);
+}
+
+
+.serch-final-list .final-list-img,
+.recommond-list .recommond-list-img,
+.hito-list .hito-list-img{
+    background: linear-gradient(180deg, 
+            rgba(249, 35, 112, 0.8) 0%,
+            rgba(238, 146, 60, 0.728) 52.76%);
+}
+.serch-final-list .final-list-img img,
+.recommond-list .recommond-list-img img,
+.hito-list .hito-list-img img{
+    display: block;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.serch-final-list .indieGroup-title,
+.recommond-list .indieGroup-title,
+.hito-list .indieGroup-title{
+    padding: 10px 0;
+    box-sizing: border-box;
+    font-size: var(--CHfs-20px);
+    text-align: center;
+    color:var(--black-color);
+    font-weight: bold;
+}
+
+.serch-final-list:hover .indieGroup-title,
+.recommond-list:hover .indieGroup-title,
+.hito-list:hover .indieGroup-title{
+    background-color: var(--notice-color);
+    color:var(--body-color)
+}
+
+
+.filter-list .hito-tag,
+.filter-list .recommonand-tag{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 25px;
+    
+    box-sizing: border-box;
+    padding: 10px 25px;
+    width: 90px;
+    border-radius: 20px;
+
+    color: var(--body-color);
+    background-color: var(--liner-color3);
+    text-align: center
+}

@@ -1,5 +1,6 @@
 /* 麵包屑 */
 .breadcrumbList {
+  font-size: var(--CHfs-16px);
   margin-top: 30px;
   margin-left: 40px;
 }
