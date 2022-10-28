@@ -2,8 +2,14 @@
     box-sizing: border-box;
     flex-basis: 420px;
     width: 420px;
-    padding: 25px 20px 50px 20px;
+    padding: 25px 20px 20px 20px;
     /* outline: 2px solid red; */
+
+    background: white;
+    opacity: .85;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-top: 35px;
 }
 .seach-filiter .music-kind,
 .seach-filiter .mood-kind{
@@ -43,10 +49,10 @@
     bottom: 0px;
     right: 5px;
     
-    transition: .3s;
+    transition: .3s ;
 }
 .title.slideToggle:hover::before{
-    transform: scale(1.8);
+    transform: scale(1.6);
 }
 /* 摺疊選單觸發由 - => +  */
 .title.slideToggle.active::before{
@@ -130,8 +136,15 @@
 .serch-final-list,
 .recommond-list,
 .hito-list{
+    background-color: var(--body-color);
     border-radius: 3px;
     border: 1px solid var(--non-notice-color);
+
+    box-shadow:
+    rgb(60 64 67 / 30%) 0px 1px 2px 0px,
+    rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    border-radius:5px;
+    overflow: hidden;
 }
 
 

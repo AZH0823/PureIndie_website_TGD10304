@@ -59,4 +59,33 @@ main.newsEvent p{
     font-weight: var(--fw-N-400);
     line-height: 1.6rem;
 }
-  
+.keyword-seach {
+    margin: 0 auto;
+    text-align: right;
+    width: 80%;
+    margin: 10px 0;
+}
+.keyword-seach >*{
+    display: inline-block;
+    vertical-align: middle;
+}
+.keyword-seach input{
+    padding-left: 2rem;
+    line-height: 35px;
+}
+.keyword-seach input:focus{
+    border: 0;
+    outline: 1px solid var(--notice-color);
+}
+.keyword-seach i{
+    transition: .3s;
+    font-size: 25px;
+}
+.keyword-seach i:hover{
+    color:var(--notice-color);
+    font-size: 35px;
+}
+.keyword-seach i:active{
+    color:var(--active-color);
+    font-size: 35px;
+}
