@@ -6,6 +6,9 @@
 @import url(./section_blcok/breadcrumb.css);
 @import url(./section_blcok/filterSeacher.css);
 @import url(./section_blcok/mediaPlayer.css);
+@import url(./section_blcok/band-news-activies.css);
+@import url(./section_blcok/filterSeacher.css);
+@import url(./section_blcok/bandBigcover_topSonglists.css);
 
 
 :root {
@@ -47,8 +50,12 @@
   
   section {
     content: "";
-    padding: 60px 0;
+    /* padding: 60px 0; */
     /* outline: 2px solid yellow; */
+  }
+
+  section:nth-child(3){
+    margin-bottom: 20vh;
   }
   
   .footer {
