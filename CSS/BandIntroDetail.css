@@ -6,6 +6,7 @@
 @import url(./section_blcok/breadcrumb.css);
 @import url(./section_blcok/bandBigcover_topSonglists.css);
 @import url(./section_blcok/band-news-activies.css);
+@import url(./section_blcok/filterSeacher.css);
 
 :root {
     font-size: 16px;

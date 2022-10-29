@@ -16,9 +16,13 @@
   flex-basis: 100%;
   
 }
+.band-detail-album{
+  flex-basis:100% ;
+}
 
 
 /* h2樂團標題列 */
+.band-detail-album .title-header,
 .band-detail-bandToplists .title-header,
 .band-detail-Intro .title-header,
 .band-block-all .title-header {
@@ -39,31 +43,35 @@
 
 
 .band-detail-bandToplists>.title-header,
-.band-detail-Intro>.title-header{
+.band-detail-Intro>.title-header,
+.band-detail-album>.title-header{
   cursor: pointer;
 }
 /* 收和按鈕製作 */
 .band-detail-bandToplists .title-header::before,
-.band-detail-Intro .title-header::before{
+.band-detail-Intro .title-header::before,
+.band-detail-album .title-header::before{
     content: "-";
     position: absolute;
     font-size: 30px;
     font-weight: bold;
     bottom: calc(50% - 10px);
     right: 20px;
+    color:var(--body-color);
     transition: .3s;
 }
 /* 收和按鈕製作 add class "active" with SilderToogle */
 .band-detail-bandToplists .title-header.active::before,
-.band-detail-Intro .title-header.active::before {
+.band-detail-Intro .title-header.active::before,
+.band-detail-album .title-header.active::before{
   content: "+";
   transform: rotate(180deg);
 }
 /* hover 效果 */
 .band-detail-bandToplists .title-header:hover::before,
-.band-detail-Intro .title-header:hover::before{
+.band-detail-Intro .title-header:hover::before,
+.band-detail-album .title-header:hover::before{
   transform: scale(1.3) ;
-  
 }
 
 
@@ -256,7 +264,7 @@
 
 
 /* 樂團簡介 */
-
+.band-detail-album .title-header,
 .band-detail-Intro .title-header{
   flex-direction: column;
   align-items: stretch;
@@ -264,7 +272,7 @@
   margin: 0;
 }
 .band-detail-txt{
-  padding: 20px 55px;
+  padding: 30px 55px;
   box-sizing: border-box;
   font-size: var(--CHfs-18px);
   font-weight: bold;

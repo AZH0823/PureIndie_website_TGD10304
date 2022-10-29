@@ -31,4 +31,9 @@ $(function () {
 		$(this).toggleClass("active");
 		$(this).parent().find(".nesws-actives-List").slideToggle(animatiomSpeed);
 	});
+	$(".band-detail-album .slideToggle").click(function (e) {
+		e.preventDefault();
+		$(this).toggleClass("active");
+		$(this).parent().find(".band-album-lists").slideToggle(animatiomSpeed);
+	});
 });

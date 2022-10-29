@@ -98,6 +98,7 @@
     padding: 20px;
 
     width: 220px;
+    margin-bottom: 20vh;
     flex-grow: 1;
 }
 .filter-list .title::after{
@@ -121,6 +122,7 @@
 }
 
 /* 搜尋,推薦,熱排 UL Container*/
+.band-album-lists,
 .serch-final-lists,
 .recommond-lists,
 .hito-lists{
@@ -132,7 +134,11 @@
     border-bottom: 1px solid var(--non-notice-color);
     
 }
+.filter-list .hito-lists.d-flex{
+    border-bottom:0px;
+}
 /* 搜尋,推薦,熱排 flex-item */
+.band-album-list,
 .serch-final-list,
 .recommond-list,
 .hito-list{
@@ -147,7 +153,7 @@
     overflow: hidden;
 }
 
-
+.band-album-list .album-list-img,
 .serch-final-list .final-list-img,
 .recommond-list .recommond-list-img,
 .hito-list .hito-list-img{
@@ -155,6 +161,7 @@
             rgba(249, 35, 112, 0.8) 0%,
             rgba(238, 146, 60, 0.728) 52.76%);
 }
+.band-album-list .album-list-img img,
 .serch-final-list .final-list-img img,
 .recommond-list .recommond-list-img img,
 .hito-list .hito-list-img img{
@@ -162,7 +169,7 @@
     margin: 0 auto;
     padding: 30px;
 }
-
+.band-album-list .band-album-title,
 .serch-final-list .indieGroup-title,
 .recommond-list .indieGroup-title,
 .hito-list .indieGroup-title{
@@ -173,7 +180,7 @@
     color:var(--black-color);
     font-weight: bold;
 }
-
+.band-album-list:hover .band-album-title,
 .serch-final-list:hover .indieGroup-title,
 .recommond-list:hover .indieGroup-title,
 .hito-list:hover .indieGroup-title{
@@ -197,4 +204,19 @@
     color: var(--body-color);
     background-color: var(--liner-color3);
     text-align: center
+}
+
+
+
+/* 樂團介紹歷屆專輯 */
+.band-detail-album{
+    /* 寬度去以下CSS 資料夾更改 */
+    /* bandBigcover_topSonglists */
+}
+.band-detail-album .title-header{
+    flex-direction: column;
+}
+.band-detail-album .band-album-lists{
+    border-bottom: 0px;
+    justify-content: space-evenly;
 }
