@@ -3,7 +3,7 @@
 }
 .form{
   height: 600px;
-  outline: 2px red solid;
+  /* outline: 2px red solid; */
   background-image: url(../../img/Aboutus/contactus-formBG.jpg);
   text-align: center;
   display: flex;

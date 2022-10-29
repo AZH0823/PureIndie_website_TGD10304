@@ -4,8 +4,8 @@
 @import url(./section_blcok/footer.css);
 @import url(./section_blcok/wide-banner.css);
 @import url(./section_blcok/breadcrumb.css);
-@import url(./section_blcok/filterSeacher.css);
-
+@import url(./section_blcok/bandBigcover_topSonglists.css);
+@import url(./section_blcok/band-news-activies.css);
 
 :root {
     font-size: 16px;
@@ -46,7 +46,7 @@
   
   section {
     content: "";
-    padding: 60px 0;
+    /* padding: 60px 0; */
     /* outline: 2px solid yellow; */
   }
   

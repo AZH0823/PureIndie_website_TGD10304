@@ -40,6 +40,9 @@ body{
     border-radius:5px;
     overflow: hidden;
 }
+main{
+    overflow: hidden;
+}
 section{
     padding: 60px 0;
     border-bottom:1.5px solid #ccc ;
