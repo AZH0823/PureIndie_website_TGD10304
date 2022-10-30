@@ -73,8 +73,16 @@ li.wanted-listcard{
   background-color: var(--body-color);
   color:var(--black-color);
   border-radius: 15px;
+
+  transition: .85s;
+  filter: grayscale(40%);
+  
 }
 
+li.wanted-listcard:hover{
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
 
 
 
@@ -209,9 +217,12 @@ li.wanted-listcard{
   margin-left: 5px;
 }
 .acount-info a{
+  padding: 5px;
+  border-radius: 5px;
   color:var(--black-color);
 }
-.acount-info a:hover{
+.acount-info .acount-time-tag a:hover{
+
   background-color: var(--notice-color);
   color:var(--body-color);
 }

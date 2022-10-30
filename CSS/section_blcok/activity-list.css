@@ -111,6 +111,12 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
 }
+.activity-list-icons span a{
+  color: var(--non-notice-color);
+}
+.activity-list-icons span:hover a{
+  color: var(--body-color);
+}
 .activity-list-icons span.active{
   background-color: var(--active-color);
   color: var(--body-color);

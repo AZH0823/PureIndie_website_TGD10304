@@ -29,9 +29,10 @@
     color: #ccc;
     margin-top: 22.5px;
     text-align: center;
-    padding: 10px 0px;
+    padding: 10px 10px;
     font-size: var(--CHfs-18px);
     font-weight: 600;
+    border-radius: 5px;
 }
 /* icon style */
 .motion-list-icon a{
@@ -56,6 +57,7 @@
 .motion-list-icon a:hover>p {
     color: var(--body-color);
     background-color: var(--notice-color);
+    
 }
 .motion .more a {
     margin-top: 20px;
