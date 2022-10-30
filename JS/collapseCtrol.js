@@ -36,4 +36,26 @@ $(function () {
 		$(this).toggleClass("active");
 		$(this).parent().find(".band-album-lists").slideToggle(animatiomSpeed);
 	});
+
+	// collect page
+	// 樂團收藏
+	$(".collect-band .slideToggle").click(function (e) {
+		e.preventDefault();
+		$(this).toggleClass("active");
+		$(this).parent().find(".collect-band-lists").slideToggle(animatiomSpeed);
+	});
+	// 歌曲收藏
+	$(".collect-band-songs .slideToggle").click(function (e) {
+		e.preventDefault();
+		$(this).toggleClass("active");
+		$(this).parent().find(".collect-songs-lists").slideToggle(animatiomSpeed);
+	});
+	// 新聞活動收藏
+	$(".collect-band-newsandActivies .slideToggle").click(function (e) {
+		e.preventDefault();
+		$(this).toggleClass("active");
+		$(this).parent().find(".nesws-actives-Lists").slideToggle(animatiomSpeed);
+	});
 });
+
+

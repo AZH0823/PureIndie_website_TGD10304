@@ -4,61 +4,287 @@
 @import url(./section_blcok/footer.css);
 @import url(./section_blcok/wide-banner.css);
 @import url(./section_blcok/breadcrumb.css);
-@import url(./section_blcok/filterSeacher.css);
 @import url(./section_blcok/mediaPlayer.css);
-@import url(./section_blcok/band-news-activies.css);
+/* @import url(./section_blcok/filterSeacher.css); */
+/* @import url(./section_blcok/band-news-activies.css);
 @import url(./section_blcok/filterSeacher.css);
-@import url(./section_blcok/bandBigcover_topSonglists.css);
-
+@import url(./section_blcok/bandBigcover_topSonglists.css); */
 
 :root {
-    font-size: 16px;
-  }
-  body{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.3),
-                                     rgba(255, 255, 255, 0.3)),
-                                      url(../img/texture/body_bg.png);
-  }
-  
-  
-  .fuild-contanier {
-    width: 100%;
-  }
-  
-  .wrap {
-    max-width: 1440px;
-    margin: 0 auto;
-    /* outline: 2px solid yellow; */
-  }
-  
-  
-  .d-flex {
-    display: flex;
-  }
-  
-  .d-flex-inline {
-    display: inline-flex;
-  }
-  
-  .b-shadow {
-    box-shadow:
-      rgb(60 64 67 / 30%) 0px 1px 2px 0px,
-      rgb(60 64 67 / 15%) 0px 2px 6px 2px;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  
-  section {
-    content: "";
-    /* padding: 60px 0; */
-    /* outline: 2px solid yellow; */
-  }
+  font-size: 16px;
+}
 
-  section:nth-child(3){
-    margin-bottom: 20vh;
-  }
-  
-  .footer {
-    font-size: 16px;
-    font-weight: var(--fw-L-300);
-  }
+body {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)),
+    url(../img/texture/body_bg.png);
+}
+
+
+.fuild-contanier {
+  width: 100%;
+}
+
+.wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  /* outline: 2px solid yellow; */
+}
+
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex-inline {
+  display: inline-flex;
+}
+
+.b-shadow {
+  box-shadow:
+    rgb(60 64 67 / 30%) 0px 1px 2px 0px,
+    rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+section {
+  content: "";
+}
+
+section:nth-child(3) {
+  margin-bottom: 20vh;
+}
+
+.footer {
+  font-size: 16px;
+  font-weight: var(--fw-L-300);
+}
+
+
+
+
+
+.collect-All.d-flex {
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Title 標題列 */
+
+.collect-band {}
+
+/* 大標題列 */
+.collect-band .title-header,
+.collect-band-songs .title-header,
+.collect-band-newsandActivies .title-header {
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  position: relative;
+
+  padding: 10px 20px;
+  height: 70px;
+
+  color: var(--body-color);
+  background-color: var(--notice-color);
+  border-radius: 3px;
+  font-size: 22px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/* 大標題列偽元素 */
+.collect-band .collect-band-title::before,
+.collect-band-songs .band-songs-title::before,
+.collect-band-newsandActivies .collect-news-title::before {
+  content: "-";
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  bottom: calc(50% - 10px);
+  right: 20px;
+  transition: .3s;
+}
+
+/* hover 效果 */
+.collect-band .collect-band-title:hover::before,
+.collect-band-songs .band-songs-title:hover::before,
+.collect-band-newsandActivies .collect-news-title:hover::before {
+  transform: scale(1.5);
+}
+
+/* 收和按鈕製作 add class "active" with SilderToogle */
+.collect-band .title-header.slideToggle.active .collect-band-title::before,
+.collect-band-songs .title-header.slideToggle.active .band-songs-title::before,
+.collect-band-newsandActivies .title-header.slideToggle.active .collect-news-title::before {
+  content: "+";
+  transform: rotate(180deg);
+}
+
+.collect-band .title-header.slideToggle.active .collect-band-title:hover::before,
+.collect-band-songs .title-header.slideToggle.active .band-songs-title:hover::before,
+.collect-band-newsandActivies .title-header.slideToggle.active .collect-news-title:hover::before {
+  transform: rotate(0deg);
+}
+
+
+/* 樂團收藏 */
+.collect-band ul.collect-band-lists {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 40px 90px;
+  background-color: var(--body-color);
+}
+
+.collect-band .collect-band-list {
+  background-color: var(--body-color);
+  border: 1px solid var(--non-notice-color);
+}
+.collect-band .collect-band-list .collect-band-img {
+  background: linear-gradient(180deg, rgba(249, 35, 112, 0.8) 0%, rgba(238, 146, 60, 0.728) 52.76%);
+
+}
+
+.collect-band .collect-band-list .collect-band-img img {
+  display: block;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.collect-band .collect-band-list .collect-band-title {
+  padding: 10px 0;
+  box-sizing: border-box;
+  font-size: var(--CHfs-20px);
+  text-align: center;
+  color: var(--black-color);
+  font-weight: bold;
+}
+.collect-band .collect-band-list:hover .collect-band-title{
+  background-color: var(--notice-color);
+  color: var(--body-color);
+
+}
+
+/* 音樂收藏 */
+/* grid setting 共用 */
+.collect-band-songs .collect-songs-lists li,
+.collect-band-newsandActivies .nesws-actives-Lists li {
+  display: grid;
+  color: var(--black-color);
+  align-items: center;
+  font-size: var(--CHfs-22px);
+  font-weight: var(--fw-B-700);
+  border-bottom: 1px dotted var(--non-notice-color);
+  padding: 7.5px 0px 7.5px 1.5rem;
+  font-size: var(--CHfs-18px);
+  font-weight: bold;
+}
+
+/* 收藏歌曲標頭header */
+.collect-band-songs .collect-songs-lists li.collect-songs-header {
+  grid-template-columns: 30px 3fr 1fr 1fr 1fr;
+  color: var(--non-notice-color);
+  text-align: center;
+}
+
+.collect-band-songs .collect-songs-lists li {
+  grid-template-columns: 30px 3fr 1fr 1fr 1fr;
+}
+
+.collect-band-songs .collect-songs-lists li span {
+  text-align: center;
+
+}
+
+
+/* 收藏新聞及活動 */
+
+.collect-band-newsandActivies .nesws-actives-Lists,
+.collect-band-songs .collect-songs-lists {
+  background-color: var(--body-color);
+}
+
+.collect-band-newsandActivies .nesws-actives-Lists li {
+  grid-template-columns: 30px 7fr 7fr 4fr;
+}
+
+.collect-band-newsandActivies .nesws-actives-Lists li.nesws-actives-header {
+
+  color: var(--non-notice-color);
+  grid-template-columns: 30px 7fr 7fr 4fr;
+
+}
+
+.collect-band-newsandActivies .nesws-actives-Lists li span {
+  text-align: center;
+}
+
+
+
+
+/* 處理文在過長 */
+.collect-songs-lists .newsandActives-title,
+.nesws-actives-Lists .newsandActives-title {
+  width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.newsandActives span.header-function i {
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  line-height: 10px;
+  padding: 10px;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: var(--body-color);
+  outline: 1px solid var(--non-notice-color);
+  box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 6467 / 15%) 0px 2px 6px 2px;
+  position: relative;
+}
+
+/* function icon hover */
+.newsandActives span.header-function i:hover {
+  color: var(--body-color);
+  background-color: var(--notice-color);
+}
+
+/* function icon active */
+.newsandActives span.header-function i:active {
+  color: var(--body-color);
+  background-color: var(--active-color);
+}
+
+
+/* icon offset */
+.collect-songs-lists span.header-function i:nth-child(2)::before,
+.collect-band-newsandActivies span.header-function i:nth-child(1)::before,
+.collect-band-newsandActivies span.header-function i:nth-child(3)::before {
+  margin-left: -2px;
+}
+
+
+/* hover碰到非Header 的li 換顏色 */
+.nesws-actives-Lists li.newsandActives:hover,
+.collect-songs-lists li.newsandActives:hover {
+  background-color: var(--notice-color);
+}
+
+ul.nesws-actives-Lists .newsandActives .header-time a,
+ul.nesws-actives-Lists .newsandActives .newsandActives-title a {
+  color: var(--black-color);
+}
+
+ul.collect-songs-lists .newsandActives:hover span:not(:nth-child(4)),
+ul.nesws-actives-Lists .newsandActives:hover span:first-child,
+ul.nesws-actives-Lists .newsandActives:hover .newsandActives-title a,
+ul.nesws-actives-Lists .newsandActives:hover .header-time a {
+  color: white;
+}

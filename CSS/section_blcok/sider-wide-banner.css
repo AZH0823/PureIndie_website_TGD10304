@@ -1,71 +1,131 @@
 
+
+
+.silder-wide{
+  position: relative;
+  
+}
 .slider{
   width: 100%;
-  /* height: 576px; */
   margin: 0 auto;
   position: relative;
   /* 隨著widows resize 重新抓取新的寬 */
-  width: 1920px;
-  /* overflow: hidden; */
+  
+  overflow: hidden;
+  
+
 }
 
 .container{
   display: flex;
-
+  height: 35vw;
+  /* 0.7 一張0.7 */
+  /* height: 576px; */
+  /* width: 100%; */
   position: relative;
-  transform: translateX(0px);
-  
-  /* transition:transform 2s ease-in-out; */
+  transform:translateX(-199%);
+  /* gap: 30px; */
+  transition:transform 1.25s ease-in-out;
 }
 
 /* 假裝背景圖 */
 .box{
+  /* width: 100%; */
+  /* min-height: 180px; */
+  /* width: 90vw; */
+  /* width: 70vw; */
+
+  width: 100%;
   flex-shrink: 0;
   box-sizing: border-box;
+  height: 100%;
+  padding-right: 30px;
   /* outline: 6px solid paleturquoise; */
-  margin-left: 30px;
-  display: flex;
-  /* background-color: var(--danger-color); */
+  /* width: 1140px; */
+ 
 }
 
 .container .box img{
   display: block;
-  height: 576px;
-}
-
-
-.slider-scroll-controller{
-  /* outline: 5px solid orchid; */
-  height: 576px;
-  width: 1440px;
-  position: absolute;
-  top: 0;
-  left: 0;
+  width: 100%;
+  height: 100%;
  
+  object-fit: cover;
 }
 
-.slider-scroll-controller span{
+/* 左右箭頭 */
+.slider-scroll-controller{
+  /* outline: 4px skyblue solid; */
+  width: 100%;
   position: absolute;
-  display: block;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
   top: 50%;
-  background-color:white;
-  box-shadow: 0px 0px 10px rgba(57, 57, 57, 0.612);
-  cursor: pointer;
 }
-.slider-scroll-controller span:hover{
-
+.slider-scroll-controller span{
+  color: white;
+  cursor: pointer;
+  
 }
 /* 向左Prev */  
 .slider-scroll-controller #prev{
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
   left: 5%;
- }
-
+  width: 60px;
+  height: 180px;
+  /* outline: 2px solid red;   */
+}
 /* 向後NEXT */
 .slider-scroll-controller #next{
-  background-color:purple;
   transform: scaleX(-1) translate(-50%,-50%);
- right: 5%;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  width: 60px;
+  height: 180px;
+  /* outline: 2px solid yellow; */
 }
+
+.slider-scroll-controller span::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 120px;
+  height: 180px;
+  background-color: var(--notice-color);
+  opacity: 0.3;
+
+  transition: .6s all ease-in;
+}
+/* 向左Prev icon */
+span#prev i {
+  transform:translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  /* outline: green 3px solid; */
+  position: absolute;
+}
+/* 向後NEXT icon */
+span#next i {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  /* outline: green 3px solid; */
+}
+
+/* hover 效果 */
+.slider-scroll-controller span:hover::after {
+  opacity: 1;
+  transition: .25s all ease-in;
+}
+.slider-scroll-controller span:active::after{
+
+  background-color: var(--active-color);
+}
+.slider-scroll-controller span:hover i{
+  color:var(--body-color)
+}
+
+
+

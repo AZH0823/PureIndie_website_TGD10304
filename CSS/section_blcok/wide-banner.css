@@ -1,12 +1,30 @@
 
 .wide-banner{
   height: 560px;
-  background-image: url(../../img/Aboutus/wideBanner_aboutus.png);
   background-position: center center;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   color:var(--black-color);
   
+}
+.wide-banner.newsEvet{
+  background-image: url(/img/Aboutus/wideBanner_aboutus.png);
+}
+.wide-banner.newsEventDetail{
+  background-image: url(../../img/Aboutus/wideBanner_aboutus.png);
+}
+.wide-banner.bandIntro{
+  background-image: url(../../img/Aboutus/wideBanner_aboutus.png);
+}
+.wide-banner.bandIntroDetail{
+  background-image: url(../../img/Aboutus/wideBanner_aboutus.png);
+}
+
+.wide-banner.aboutUs{
+  background-image: url(/img/Aboutus/wideBanner_aboutus.png);
+}
+.wide-banner.collection{
+  background-image: url(/img/Aboutus/wideBanner_collection.png);
 }
 
 

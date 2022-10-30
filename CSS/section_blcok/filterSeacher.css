@@ -58,6 +58,10 @@
 .title.slideToggle.active::before{
     content: "+";
 }
+/* + 號 hover 效果 */
+.title.slideToggle.active:hover::before {
+   transform: rotate(180deg);
+}
 /* 搜尋標籤 */
 .seach-filiter li{
     display: inline-block;
@@ -218,5 +222,6 @@
 }
 .band-detail-album .band-album-lists{
     border-bottom: 0px;
+    background-color: var(--body-color);
     justify-content: space-evenly;
 }
