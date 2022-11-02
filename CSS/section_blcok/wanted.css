@@ -50,15 +50,13 @@
 }
 
 .wanted-song-title h2{
-  color: var(--non-notice-color2);
   margin-bottom: 12px;    
   font-size: var(--CHfs-28px);
   font-weight: var(--fw-B-700);
 }
 
 .wanted-song-title p {
-
-  color:var(--non-notice-color);
+  color: var(--non-notice-color2);
   font-size: var(--CHfs-16px);
   font-weight: var(--fw-SB-600);
 }
@@ -140,10 +138,10 @@ li.wanted-listcard:hover{
   padding: 0px 10px;
   text-align: center;
   font-size: 5px;
-  
   border: 1px solid #D9D9D9;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
   border-radius: 25px;
+  color: var(--black-color);
 }
 .wanted-list-ablumn a:nth-child(1){
   background: var(--body-color);

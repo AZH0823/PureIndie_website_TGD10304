@@ -199,12 +199,14 @@
     right: 10%;
     bottom: 10%;
 
+    color:var(--body-color);
+    background-color:var(--liner-color2);
+    border-radius: 25px;
+    transition: .4s;
     
 }
 .about-banner-ablumns .flip-card-back a:hover{
-    background-color:var(--liner-color2);
-    border-radius: 25px;
-    color:var(--body-color);
+    transform: scale(1.1);
 }
 .about-banner-ablumns .flip-card-back {
   background-color: var(--notice-color);
