@@ -30,7 +30,7 @@
   width: 100%;
   font-size: var(--CHfs-22px);
   font-weight: var(--fw-SB-600);
-  background: linear-gradient(90deg, #05141D -7.36%, #119F52 118.42%);
+  background: linear-gradient(90deg, #cebd2e -7.36%, #ff9800 118.42%);
 }
 
 .form-list label {
@@ -137,7 +137,7 @@
 .sent{
   margin: 10px auto;
   padding: 10px 20px;
-  width: 180px;
+  width: 100px;
   border-radius: 3px;
   font-weight: var(--fw-SB-600);
   color: var(--body-color);

@@ -17,7 +17,8 @@
     margin-bottom: 50px;
     position: relative; 
 }
-.ch-title::after{
+/* 中文底線 */
+/* .ch-title::after{
     content:'';
     position: absolute;
     bottom: 0;
@@ -25,7 +26,7 @@
     width: 100%;
     background-color: var(--body-color);
 
-}
+} */
 .about-banner .ch-title h1{
     font-size: 60px;
     font-weight: Bold;

@@ -50,7 +50,7 @@
 }
 
 .wanted-song-title h2{
-  color: var(--black-color);
+  color: var(--non-notice-color2);
   margin-bottom: 12px;    
   font-size: var(--CHfs-28px);
   font-weight: var(--fw-B-700);
@@ -75,12 +75,9 @@ li.wanted-listcard{
   border-radius: 15px;
 
   transition: .85s;
-  filter: grayscale(40%);
-  
 }
 
 li.wanted-listcard:hover{
-  filter: grayscale(0%);
   transform: scale(1.05);
 }
 
@@ -208,7 +205,7 @@ li.wanted-listcard:hover{
 .acount-info>*{
   display: inline-block;
   line-height:30px;
-  width: 80%;
+  width: calc(100% - 60px);
   text-align: right;
 }
 .acount-info .user-logo{

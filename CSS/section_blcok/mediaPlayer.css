@@ -83,7 +83,7 @@ input[type='range']::-webkit-slider-thumb {
     height: 10px;
     /* cursor: ew-resize; */
     background: var(--body-color);
-    box-shadow: -80px 0 0 80px var(--notice-color);
+    box-shadow: -80px 0 0 80px var(--active-color);
     border-radius: 5px;
 }
 

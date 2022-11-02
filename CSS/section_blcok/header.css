@@ -13,6 +13,8 @@
 /*定義左邊logo 及 四個LI */
 .header-navList{
    float:left;
+   margin-top: 15px;
+   margin-right: 15px;
    align-items: center;
 }
 /* 每一個li 寬度 */
@@ -22,8 +24,8 @@
     /* 定義寬度 */
     flex-basis: 140px;
     flex-shrink: 0;
-    margin-top: 15px;
-    padding: 20px 15px;
+    
+    /* padding: 20px 15px; */
     text-align: center;
     position: relative;
 }
@@ -44,6 +46,7 @@
  .header-navList li a{
     color:var(--black-color);
     display: block;
+    padding: 20px 15px;
 } 
 
 /* 目前Header 畫面填顏色 */
@@ -61,6 +64,7 @@
 }
 .header-navList>li.nowPage a{
     color: var(--body-color);
+    /* padding: 20px 15px; */
 }
 
 /* 在登入畫面 */
@@ -95,6 +99,7 @@
 .news .news-title{
     cursor: pointer;
     color:var(--black-color);
+    padding: 20px 15px;
 }
 .header-navList li:hover .news-List{
     display: block;
