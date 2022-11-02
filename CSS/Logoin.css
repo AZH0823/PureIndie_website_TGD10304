@@ -21,7 +21,7 @@ body {
 .wrap {
   max-width: 1440px;
   margin: 0 auto;
-  outline: 2px solid yellow;
+  /* outline: 2px solid yellow; */
 }
 
 
@@ -126,9 +126,9 @@ section {
 #form-create label {
   display: block;
   font-size: var(--CHfs-16px);
-  margin-top: 1rem;
+  margin: 1rem 0px;
   font-weight: 400;
-    color: var(--non-notice-color);
+  color: var(--non-notice-color);
 }
 #form-login input[type="text"],
 #form-login input[type="password"],
@@ -167,7 +167,7 @@ section {
   align-items: center;
 }
 .logoinIcon li:nth-child(2){
-  margin: 0 2rem;
+  margin-left: 3rem;
   font-size: var(--CHfs-18px);
 }
 
@@ -182,12 +182,12 @@ section {
   color: var(--active-color);
 }
 
-
-div.create,
-div.logo-in{
+.create,
+.logo-in{
+  text-align: center;
   display: block;
   font-size: 20px;
-  text-align: center;
+  margin: 0 auto;
   min-width: 80px;
   border: 0px;
   margin: 0 auto;
@@ -195,14 +195,21 @@ div.logo-in{
   width: 30%;
   border-radius: 5px;
 }
- div.create:active,
- div.logo-in:active{
+.create:active,
+.logo-in:active{
   background-color: var(--active-color);
   color: var(--notice-color);
 }
 
- div.create:hover,
- div.logo-in:hover{
+.create:hover,
+.logo-in:hover{
   background-color: var(--notice-color);
   color: var(--body-color);
+}
+
+.logoinIcon .fa-square-facebook{
+  color: blue;
+}
+.logoinIcon .fa-square-google-plus{
+  color: red;
 }

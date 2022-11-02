@@ -24,7 +24,7 @@
 
 
 .band-title p{
-  color: #ccc;
+  color: var(--non-notice-color2);
   font-weight: 600;
   font-size: var(--CHfs-18px);
 }
@@ -41,6 +41,9 @@
   width: 100px;
 
 } 
+.band-top-list-icon a p{
+  color: var(--non-notice-color2);
+}
 
 /* icon style */
 .band-top-list-icon img {

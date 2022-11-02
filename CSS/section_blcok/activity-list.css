@@ -57,13 +57,13 @@
   background-color: var(--body-color);
   border-radius: 20px;
   overflow: hidden;
-  transition:all .6s ease-in-out;
+  transition:all .8s ease-in-out;
   filter: grayscale(50%);
   transform: translate(0px,0px);
 }
 .activity-list li:hover{
-  transform: translate(0px, -30px);
-  transition: all .8s ease-in-out;
+  transform: translate(0px, -10px);
+  transition: all .3s ease-in-out;
   filter: grayscale(0%);
 }
 

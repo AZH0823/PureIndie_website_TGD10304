@@ -90,6 +90,9 @@
       rgb(60 64 67 / 30%) 0px 1px 2px 0px,
       rgb(60 64 67 / 15%) 0px 2px 6px 2px;
 }
+.recommend-list-icons >a:nth-child(2){
+  margin: 0 3px;
+}
 
 .recommend-list-icons a:hover{
   background-color: var(--notice-color);

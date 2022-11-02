@@ -7,7 +7,7 @@
 .band-detail-activies .title-header {
   align-items: center;
   box-sizing: border-box;
-  height: 70px;
+  height:50px;
   padding: 10px 20px;
 
   color: var(--body-color);
