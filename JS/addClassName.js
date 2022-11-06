@@ -12,9 +12,13 @@ function userActive(e){
     el.className = `user non-active d-flex`
     // el.classList.add('non-active')
   })
-   target.classList.remove('non-active')
-   target.classList.add('active')
+  target.classList.remove('non-active')
+  target.classList.add('active')
 
+  const nonUsers = [...document.querySelectorAll(".user.non-active")]
+  nonUsers.forEach((noUser,index) => {
+    noUser.style.left = `${ ( index * 10 )+ 20}% ` 
+  })
 }
 // 社群評論點擊監聽
 userList.forEach(user=>{
@@ -27,6 +31,7 @@ iconActive.addEventListener("click",(e)=>{
     iconAction ? menuIcon.classList.add("active") : menuIcon.classList.remove("active") 
     iconAction ? body.classList.add("overflow"): body.classList.remove("overflow")
     silderMemu.classList.toggle("iconActive")
+
   }
 })
 

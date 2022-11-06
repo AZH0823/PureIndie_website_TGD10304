@@ -5,6 +5,7 @@
   padding: 50px 0px;
   justify-content: center;
   background: var(--notice-color);
+  position: relative;
 }
 .activity-title h2{
   color: var(--body-color);
@@ -28,6 +29,7 @@
   padding-left: 100px;
   width: 0px;
   transition:width 1.5s 3s ease-in-out;
+
 
 }
 .user.non-active .userLogo{
@@ -133,4 +135,58 @@
 .user-content .stars span:hover i{
   cursor: pointer;
   transform: scale(1.15);
+}
+
+@media screen and (max-width:1280px) {
+  .commit-users{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .user.active{
+    position: static;
+    order: -1;
+    margin-left: 100px;
+  }
+  .user.active .user-content{
+    width: 70%;
+  }
+
+
+ .commit-users{
+    
+  }
+  .user.non-active {
+    z-index: 10;
+    position: absolute;
+    top: 10%;
+  }
+  
+  
+}
+
+@media screen and (max-width:800px) {
+  .user.active .user-content{
+    overflow-y: scroll;
+    height: 400px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /* -webkit-line-clamp: 8; */
+    -webkit-box-orient: vertical;
+  }
+}
+
+@media screen and (max-width:720px) {
+  .user.active{
+    order: -1;
+    margin-left: 60px;
+  }
+  
+}
+
+
+@media screen and (max-width:414px) {
+  .user.active{
+    order: -1;
+    margin-left: 60px;
+  }
 }
