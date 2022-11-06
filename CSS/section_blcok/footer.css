@@ -26,7 +26,9 @@
     flex-wrap: wrap;
     column-gap: 8em;
     gap: 20px;
+    position: relative;
 }
+
 .footer-about .footer-logo img{
     width: 150px;
 }
@@ -40,7 +42,9 @@
 .footer-about .socail-list a:hover{
     color:var(--notice-color);
 }
-
+.footer-about .socail-list a:active{
+    color:var(--active-color);
+}
 .about-link,.new-link{
     column-gap: 1.5em;
 }
@@ -68,6 +72,9 @@
     text-decoration: underline;
     transition: .2s;
 }
+.about-detail{
+    position: relative;
+}
 
 .about-detail a:hover,
 .news-detail a:hover {
@@ -80,8 +87,81 @@
 }
 .footer-copyright{
     font-size: .9rem;
-    margin: 20px 0 20px 15px;
+    margin: 20px 0 20px 7%;
     letter-spacing: 2px;
     line-height: 1.6;
     
+}
+.footer-copyright p{
+    margin-bottom: 10px;
+}
+
+
+
+@media screen and (max-width: 1440px) {
+    
+}
+
+@media screen and (max-width: 1280px) {
+  
+}
+
+@media screen and (max-width: 720px) {
+    .footer-about{
+        text-align: center;
+        justify-content: center;
+        gap: 45px;
+        padding: 30px 0;
+        font-size: 20px;
+    }
+    .footer-about::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 80%;
+        border-radius: 10px;
+        height: 2px;
+        z-index: 10;
+        background-color: rgba(204, 204, 204, 0.577);
+     }
+    .footer-about .footer-logo,
+    .footer-about .socail-list,
+    .footer-about .news-detail,
+    .footer-about .about-detail{
+        flex-basis: 35%;
+    }
+    .about-link,.new-link{
+        justify-content: center;
+    }
+    .footer-about .socail-list a {
+        margin-left: 10px;
+    }
+    
+    .footer-copyright{
+        margin: 20px auto;
+        margin-left: 63px;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 415px) {
+   
+    .footer-about .news-detail,
+    .footer-about .about-detail{
+        flex-basis: 100%;
+    }
+    .about-detail,.news-detail{
+        align-items: center;    
+    }
+    .about-detail::after{
+        content: "";
+        width: 30%;
+        bottom: -8px;
+        height: 2px;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.242);
+    }
+    .about-link,.new-link {
+        flex-direction: column;
+    }
 }

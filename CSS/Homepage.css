@@ -42,7 +42,7 @@ body{
     overflow: hidden;
 }
 main{
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 section{
     padding: 60px 0;
