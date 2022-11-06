@@ -232,7 +232,7 @@
         transition: none;
     }
      .header-navList{
-        left: -100%;
+        left: -105%;
         flex-direction: column;
         flex-basis: auto;
         position: absolute;
@@ -339,11 +339,5 @@
     .header-navList > li{
         width: 100%;
     }
-    .header-navList > li:nth(2){
-        /* margin-top: 50px; */
-    }
-    .header-navList .news-List{
-        /* display: block; */
-        /* position: relative; */
-    }
+    
 }
