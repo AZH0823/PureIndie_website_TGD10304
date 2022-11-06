@@ -16,7 +16,9 @@ body{
     background-image: linear-gradient(rgba(224, 224, 224, 0.8),
                 rgba(255, 255, 255, 0.3)),
             url(../img/texture/body_bg.png);
+    transition: 2s background-image ease-in;
 }
+
 .fuild-contanier{
     width: 100%;
 }
@@ -26,12 +28,11 @@ body{
     /* outline: 2px solid yellow; */
 }
 
-
 .d-flex{
     display: flex; 
 }
 .d-flex-inline{
-    display: inline-flex;
+    /* display: inline-flex; */
 }
 .b-shadow{
     box-shadow:
@@ -41,15 +42,26 @@ body{
     overflow: hidden;
 }
 main{
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 section{
     padding: 60px 0;
     border-bottom:1.5px solid #ccc ;
     
 }
+.footer {
+    font-size: 16px;
+    font-weight: var(--fw-L-300);
+  }
 .message-own{
     outline: yellow solid 4px;
     justify-items: center;
     align-items: center;
+}
+
+/* in moblie and pad ,click menuIcon  add or Toggle this className */
+body.overflow{
+    overflow: hidden;
+    background-image: linear-gradient(rgb(54 54 54 / 80%),
+     rgb(35 35 35 / 86%)), url(../img/texture/body_bg.png);
 }

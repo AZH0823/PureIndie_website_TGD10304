@@ -42,7 +42,12 @@ section{
     /* border-bottom:1.5px solid #ccc ; */
     
 }
-
+/* in moblie and pad ,click menuIcon  add or Toggle this className */
+body.overflow{
+    overflow: hidden;
+    background-image: linear-gradient(rgb(54 54 54 / 80%),
+     rgb(35 35 35 / 86%)), url(../img/texture/body_bg.png);
+}
 main.newsEvent h1{
     font-size: var(--CHfs-28px);
     font-weight: var(--fw-B-700);

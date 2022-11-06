@@ -55,3 +55,9 @@
     font-size: 16px;
     font-weight: var(--fw-L-300);
   }
+  /* in moblie and pad ,click menuIcon  add or Toggle this className */
+body.overflow{
+  overflow: hidden;
+  background-image: linear-gradient(rgb(54 54 54 / 80%),
+   rgb(35 35 35 / 86%)), url(../img/texture/body_bg.png);
+}

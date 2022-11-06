@@ -56,6 +56,18 @@ $(function () {
 		$(this).toggleClass("active");
 		$(this).parent().find(".nesws-actives-Lists").slideToggle(animatiomSpeed);
 	});
+
+	// header
+
+	$(".news .news-title.slideToggle").click(function (e) {
+		e.preventDefault();
+		var width = $(window).width()
+		// 假如沒有到手機視窗不執行程式
+		if(width <=700){
+			$(this).toggleClass("active");
+			$(this).parent().find(".news-List").slideToggle(animatiomSpeed);
+		}
+	});
 });
 
 

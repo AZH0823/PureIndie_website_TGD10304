@@ -13,14 +13,14 @@
 <body>
   <div class="contaniner">
     <header class="fuild-contanier header">
-      <nav class="wrap">
-           <a href="./index.html" title="logo" class="logo" >
-               <img src="./img/LOGO-final.png" title="Pure Indie Music" alt="">
-           </a>
-           <i class="fa-sharp fa-solid fa-bars" style="display:none;"></i>
-           <ul class="header-navList d-flex">
+      <nav class="wrap d-flex header-nav">
+          <a href="./index.html" title="logo" class="logo" >
+              <img src="./img/LOGO-final.png" title="Pure Indie Music" alt="">
+          </a>
+          
+          <ul class="header-navList d-flex">
                <li class="news">
-                   <h3 class="news-title">活動消息</h3>
+                   <h3 class="news-title slideToggle">活動消息</h3>
                    <ul class="news-List">
                        <li><a href="./newsEvet.html">最新消息</a></li>
                        <li><a href="./newsEvet.html">熱門消息</a></li>
@@ -28,7 +28,7 @@
                        <li><a href="./newsEvet.html">文章評論</a></li>
                    </ul>
                </li>
-               <li class="nowPage">
+               <li>
                    <a href="./bandIntro.html">樂團介紹</a>
                </li>
                <li>
@@ -37,14 +37,20 @@
                <li>
                    <a href="./collection.html">我的收藏</a>
                </li>
+               <li class="icon">
+                   <a href="#">
+                       <i class="fa-solid fa-magnifying-glass" title="搜尋專區"></i>
+                   </a>
+               </li>
+               <li class="icon" >
+                   <a href="./login.html"><i class="fa-regular fa-user" title="會員專區"></i></a>
+               </li>
            </ul>
-           <div class="tool-icon d-flex">
-               <i class="fa-solid fa-magnifying-glass"></i>
-               <a href="./login.html"><i class="fa-regular fa-user"></i></a>
-                  
+           <div class="tool-icon" >
+               <i class="fa-sharp fa-solid fa-bars"></i>   
            </div>
       </nav>
-  </header>
+</header>
 
   <main>
     <!-- bigwide banner -->
@@ -284,10 +290,9 @@
     
 </footer>
   </div> 
-
-  <script src="https://code.jquery.com/jquery-3.6.1.js"
-  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
   crossorigin="anonymous"></script>
+  <script src="./JS/addClassName.js"></script>
   <script src="./JS/collapseCtrol.js"></script>
 </body>
 </html>
