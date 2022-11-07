@@ -17,7 +17,7 @@ function userActive(e){
 
   const nonUsers = [...document.querySelectorAll(".user.non-active")]
   nonUsers.forEach((noUser,index) => {
-    noUser.style.left = `${ ( index * 10 )+ 20}% ` 
+    noUser.style.right = `${ ( index * 10 )+ 7.5}% ` 
   })
 }
 // 社群評論點擊監聽

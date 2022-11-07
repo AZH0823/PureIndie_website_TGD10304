@@ -2,13 +2,18 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 1.1; 
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 30px;
   padding: 50px 0px;
   justify-content: center;
   background: var(--notice-color);
   position: relative;
 }
-.activity-title h2{
+.socal-commit-title h2{
   color: var(--body-color);
+  margin-bottom: 50px;
+  margin-left: 50px;
 }
 .commit-users{
   flex-direction: row;
@@ -106,16 +111,21 @@
 }
 /* 使用者發布時間 */
 .user-content .user-info span{
+  font-size: 16px;
   color:var(--non-notice-color);
   text-decoration: underline;
 }
 /* 使用者發布P段落文章 */
-.user-lorem p{
-  color: black;
-  
+.user-lorem{
   text-indent: 24px;
   text-align: justify;
   line-height: 1.2;
+  
+}
+.user-lorem p{
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
   margin: 20px 0;
   line-height: 1.4;
 }
@@ -129,36 +139,40 @@
   text-indent: 5px;
 }
 .user-content .stars i{
-  color:var(--notice-color)
+  color:var(--notice-color);
+  transition: .25s transform ease-out;
 }
 
 .user-content .stars span:hover i{
   cursor: pointer;
   transform: scale(1.15);
 }
-
+.user-content .stars span:active i{
+  cursor: pointer;
+  color:var(--active-color);
+}
+@media screen and (max-width:1400px) {
+  
+}
 @media screen and (max-width:1280px) {
+  
   .commit-users{
+    
     flex-direction: column;
     gap: 20px;
   }
   .user.active{
     position: static;
     order: -1;
-    margin-left: 100px;
+    margin-left: 5%;
   }
   .user.active .user-content{
-    width: 70%;
-  }
-
-
- .commit-users{
-    
+    width: 80%;
   }
   .user.non-active {
     z-index: 10;
     position: absolute;
-    top: 10%;
+    top: 5%;
   }
   
   
@@ -178,15 +192,42 @@
 @media screen and (max-width:720px) {
   .user.active{
     order: -1;
-    margin-left: 60px;
+    margin-left: 8%;
   }
-  
+  .user.active .userLogo{
+
+    max-width: 120px;
+    width: 80%;
+    margin-right: -60px;
+  }
+  .user.non-active .userLogo {
+    min-width: 50%;
+    width: 50px;
+  }
+  .user.active .user-content{
+    padding: 20px 30px;
+    padding-left: 70px;
+  }
+  .user-content .stars{
+    font-size: 18px;
+  }
+  .user-content .stars i{
+    margin-left: -3px;
+  }
 }
 
 
-@media screen and (max-width:414px) {
+@media screen and ( max-width: 415px ) {
   .user.active{
     order: -1;
-    margin-left: 60px;
+    margin-left: 5%;
+  }
+  .user-content .stars{
+    font-size: 18px;
+  }
+
+  .user.non-active .userLogo {
+    min-width: 50%;
+    width: 50px;
   }
 }

@@ -1,5 +1,6 @@
 .wanted-song{
   font-size: var(--CHfs-22px);
+  overflow: hidden;
 }
 .silderAll{
   /* outline: 5px red solid;  */
