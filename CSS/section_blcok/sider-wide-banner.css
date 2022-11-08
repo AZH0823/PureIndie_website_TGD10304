@@ -19,6 +19,7 @@
 .container{
   display: flex;
   height: 35vw;
+  min-height: 180px;
   /* 0.7 一張0.7 */
   /* height: 576px; */
   /* width: 100%; */

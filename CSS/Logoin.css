@@ -219,3 +219,11 @@ body.overflow{
 .logoinIcon .fa-square-google-plus{
   color: red;
 }
+
+@media screen and (max-width : 414px){
+  .box{
+    min-width: none;
+    width: 80%;
+    margin: 0 auto;
+  }
+}

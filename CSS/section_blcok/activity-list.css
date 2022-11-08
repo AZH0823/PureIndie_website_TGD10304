@@ -84,8 +84,9 @@
     line-height: 1.2;
     font-size: 1.8rem;
     font-weight: bold;
-    
-     
+}
+.activity-list-descri h2{
+  margin-bottom: 5px;
 }
 .activity-list-descri p{
   font-weight: 300;
@@ -155,7 +156,7 @@
 @media screen and (max-width:1280px) {
   .activity-list{
     justify-content: center;
-    padding: 5rem 2rem;
+    padding: 2.5rem 2rem;
   }
   
 }

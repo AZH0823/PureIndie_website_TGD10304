@@ -7,37 +7,34 @@
     margin-top: 80px;
 }
 .about-banner-titles{
+    box-sizing: border-box;
+    width: 100%;
     color:var(--body-color);
     padding: 30px 60px;
+    font-size: 48px;
 }
 
 .about-banner .ch-title{
     width: 65%;
-    line-height: 1.4em;
+    line-height: 1.6em;
     margin-bottom: 50px;
     position: relative; 
 }
-/* 中文底線 */
-/* .ch-title::after{
-    content:'';
-    position: absolute;
-    bottom: 0;
-    height: 4px;
-    width: 100%;
-    background-color: var(--body-color);
-
-} */
 .about-banner .ch-title h1{
-    font-size: 60px;
+    font-size: 1.25em;
     font-weight: Bold;
+    margin-bottom: 2rem;
 }
 
 .about-banner .ch-title h2{
-   font-size: 48px; 
+   font-size: 1em; 
 }
 
 .eng-title{
-    font-size: 30px;
+    width: 100%;
+    line-height: 1.5em;
+    margin-top: 1.5em;
+    font-size: 0.5em;
     position: relative;
 }
 .eng-title a {
@@ -215,3 +212,74 @@
 }
   
 
+@media screen and (max-width:1280px) {
+  
+    .about-banner .ch-title{
+        
+        font-size: 55px;
+    }
+    .about-banner .ch-title h2{
+        font-size: .7em;
+    }
+   
+}
+
+@media screen and (max-width:960px){
+    .about-banner-titles{
+        padding: 0px 20px;
+    }
+    .about-banner .ch-title{
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+        font-size: 35px;
+    }
+    .about-banner .ch-title h1{
+        font-size: 1.1em;
+    }
+    .about-banner .ch-title h2{
+        max-width: 800px;
+        width: 80%;
+        text-align: justify;
+        margin: 0 auto;
+        /* text-align: justify; */
+       font-size: .8em;
+    }
+    
+    .eng-title{
+        margin: 0 auto;
+        width: 65%;
+        font-size: .4em;
+    }
+
+}
+@media screen and (max-width:576px) {
+    .about-banner-titles{
+        font-size: 30px;
+    }
+    .about-banner .ch-title h1{
+        font-size: .9em;
+    }
+    .eng-title{
+      
+        font-size: .6em;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .about-banner-titles{
+        font-size: 24px;
+    }
+    .about-banner .ch-title{
+        width: 90%;
+    }
+    
+    .about-banner .ch-title h2{
+        width: 75%;
+        font-size: .8em;
+    }
+    .eng-title{
+        width: 75%;
+        font-size: .7em;
+    }
+}
