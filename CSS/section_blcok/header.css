@@ -247,6 +247,7 @@
     }
     .header-navList.iconActive{
         left: 0%;
+        height: calc(100vh - 40px);
     }
 
     .header-navList >li{
@@ -332,7 +333,7 @@
         /* bottom: -260%; */
       
         background-color: var(--body-color);
-        width: calc(100% - 5px) ;
+        width: calc(100% - 10px) ;
         min-width: 0;
     }
     

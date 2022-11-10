@@ -52,13 +52,10 @@
 
 /* 專輯區 */
 .about-banner-ablumns{
-    /* outline: 2px solid goldenrod; */
     width: 100%;
     height: 1000px;
     margin: 50px auto;
-    
     position: relative;
-    /* perspective: 500px; */
 }
 
 
@@ -67,14 +64,19 @@
     width: 100%;
     height: auto;
 }
+.ablumn{
+    transition: all 1.5s;
+    width: 100%;
+    height: 100%;
+}
 
 /* 翻牌大小 與 訂位 */
 .box1.ablumn{
     width: 360px;
     height: 360px;
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: calc(0% + 50px);
+    bottom: calc(0% + 15px);
 }
 
 .box2.ablumn{
@@ -90,6 +92,7 @@
     position: absolute;
     left: calc(0% + 360px);
     top: calc(50% - 120px );  
+   
 }
 .box4.ablumn{
     width: 320px;
@@ -108,10 +111,11 @@
 }
 .box6.ablumn{
     width: 480px;
+    
     height: 480px;
     position: absolute;
-    right: calc(10% + 30px);
-    top: calc(10% - 0px);
+    right: calc(5% + 30px);
+    top: calc(-7.5% - 0px);
 }
 
 
@@ -131,7 +135,7 @@
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
 }
 
 
@@ -145,7 +149,7 @@
  .about-banner-ablumns .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
@@ -221,11 +225,36 @@
     .about-banner .ch-title h2{
         font-size: .7em;
     }
+
+    .about-banner  .ablumn{
+        width: 300px;
+        height: 300px;
+    }
+
+    .box1.ablumn{
+        transform: translate(38px,-23px)scale(.85);
+    }
+    .box3.ablumn{
+          left: calc(0% + 180px);
+        transform: translate(38px,-23px)scale(.8);
+    }
+    .box4.ablumn{
+        left: calc(69% - 100px);
+        bottom: 50px;
+    }
+    .box5.ablumn{
+        right: calc(12% + 32px);
+        bottom: calc(36% + 30px);
+    }
+    .box6.ablumn{
+        top: calc(10% - 129px);
+        /* width: 40%; */
+    }
    
 }
 
 @media screen and (max-width:960px){
-    .about-banner-titles{
+    .big-wide-banner.about-banner-titles{
         padding: 0px 20px;
     }
     .about-banner .ch-title{
@@ -251,6 +280,34 @@
         width: 65%;
         font-size: .4em;
     }
+    .about-banner .about-banner-ablumns{
+        display: flex;
+        height: 300px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        transform: translateX(0px);
+        overflow: hidden;
+    }
+    .about-banner-ablumns .ablumn{
+        flex-shrink: 0;
+        position: static;
+        /* width: 50%; */
+        max-width: 300px;
+        width: 100%;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+        transform: scale(1) translate(0,0);
+    }
+
+    .about-banner-ablumns .flip-card-front img {
+        max-height: none;
+    
+    }
+    .about-banner-ablumns .flip-card-back img{
+
+    }
 
 }
 @media screen and (max-width:576px) {
@@ -264,6 +321,11 @@
       
         font-size: .6em;
     }
+    .about-banner-ablumns .ablumn{
+      
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 414px){
@@ -271,7 +333,7 @@
         font-size: 24px;
     }
     .about-banner .ch-title{
-        width: 90%;
+        width: 100%;
     }
     
     .about-banner .ch-title h2{
@@ -282,4 +344,11 @@
         width: 75%;
         font-size: .7em;
     }
+    .about-banner .about-banner-ablumns{
+        margin-top: -10px;
+         margin-bottom: 30px;
+    }
+
+
+    
 }

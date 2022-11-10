@@ -73,6 +73,8 @@
 
 .descri-txt {
   width: calc(50% - 2rem);
+  padding: 0 2%;
+  box-sizing: border-box;
 }
 
 .aboutme .descri-txt,
@@ -91,7 +93,7 @@
 .descri-txt p {
   text-align-last: left;
   text-justify: distribute;
-  margin: 42px 0px;
+  margin: 35px 0px;
   text-indent: 3rem;
   line-height: 30px;
   font-size: 1.375rem;
@@ -109,6 +111,9 @@
 
 .sec-block img {
   float: left;
+  display: block;
+  width: 50%;
+  padding: 0 1%;
   font-size: 0;
 }
 
