@@ -247,6 +247,7 @@
     }
     .header-navList.iconActive{
         left: 0%;
+        overflow-y: scroll;
         height: calc(100vh - 40px);
     }
 

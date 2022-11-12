@@ -24,34 +24,6 @@
 }
 
 
-/* .main-aboutus.wrap>span:nth-child(2)::before {
-  content: '';
-  position: absolute;
-  right: 0;
-  bottom: calc(50% + 100px);;
-  background-color: var(--notice-color);
-  width: 10px;
-  height: 375px;
-}
-
-.main-aboutus.wrap>span:nth-child(2)::after {
-  content: '';
-  position: absolute;
-  right: 2px;
-  bottom: calc(50% - 135px);
-  background-color: var(--notice-color);
-  width: 6px;
-  height: 515px;
-  opacity: 0.3;
-} */
-
-
-
-
-
-
-
-
 /* 關於我們sec1 */
 
 .wide-banner img {
@@ -71,29 +43,21 @@
   padding: 0px 100px 0px 80px;
 }
 
-.descri-txt {
-  width: calc(50% - 2rem);
-  padding: 0 2%;
-  box-sizing: border-box;
-}
-
-.aboutme .descri-txt,
-.joinus .descri-txt {
-  float: right;
+.aboutme .sec-block{
   text-align: center;
 }
 
-.descri-txt h1 {
-  font-size: var(--ENG-fs-60px);
-  margin-top: 30px;
+
+.aboutme .sec-block h1{
+  font-size: min(6.5vw, 60px);
+  margin-top: 2%;
   font-weight: var(--fw-B-700);
   color: var(--notice-color)
 }
 
-.descri-txt p {
-  text-align-last: left;
-  text-justify: distribute;
-  margin: 35px 0px;
+.aboutme .aboutme-desc {
+  text-align: justify;
+  margin: 30px 0px;
   text-indent: 3rem;
   line-height: 30px;
   font-size: 1.375rem;
@@ -101,7 +65,7 @@
 
 }
 
-.descri-txt p+p {
+.descri-txt .aboutme-desc + .aboutme-desc {
   margin-bottom: 0;
 }
 
@@ -113,11 +77,55 @@
   float: left;
   display: block;
   width: 50%;
-  padding: 0 1%;
+  max-width: 620px;
+  /* padding: 0 1%; */
   font-size: 0;
+
+  padding-right: 3%;
+    padding-bottom: 3%;
 }
 
 .joinus img {
   float: right;
   font-size: 0;
+}
+@media screen and ( max-width :960px){
+  .sec-block{
+    padding: 0 80px;
+    margin: 0;
+  }
+  .sec-block img{
+    margin-top: 3%;
+  }
+  .sec-block .joinus img{
+    padding: 0;
+    padding-left: 3%;
+    padding-bottom: 3%;
+  }
+  .aboutme h1{
+    font-size: max( 60px,8.5vw);
+  }
+  .aboutme .sec-block .aboutme-desc {
+    margin: 15px auto;
+    font-size: var(--CHfs-18px);
+    width: 90%;
+    text-indent: 30px;
+  }
+ 
+}
+@media screen and ( max-width :720px){
+  .sec-block{
+    padding: 5px;
+  }
+  .sec-block img{
+    float: none;
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width:414px) {
+  .aboutme .sec-block h1{
+    font-size: 30px;
+  }
 }

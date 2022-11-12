@@ -60,11 +60,11 @@
 
 
 
-.ablumn img{
+.big-wide-banner .ablumn img{
     width: 100%;
     height: auto;
 }
-.ablumn{
+.big-wide-banner .ablumn{
     transition: all 1.5s;
     width: 100%;
     height: 100%;

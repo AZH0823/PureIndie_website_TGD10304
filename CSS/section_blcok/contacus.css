@@ -15,7 +15,7 @@
   background-color: var(--body-color);
   border: 1px solid rgba(204, 204, 204, 0.203);
   overflow: hidden;
-  width: 475px;
+  max-width: 475px;
   border-radius: 15px;
 }
 .form-list form{
@@ -103,12 +103,14 @@
   top: 50%;
   left: 50%;
   
-  padding: 20px 60px;
-  width: 800px;
-  box-sizing: border-box;
+  padding: 3% 5%;
+  max-width: 800px;
+  width: 80%;
+  box-sizing: border-box;  
   
-
+  text-align: center;
   font-size: 1.4rem;
+  font-weight: 600; 
   text-indent: 2.5rem;
     
   background: var(--body-color);
@@ -122,7 +124,7 @@
 }
 .txt-descri h2{
   line-height: 4rem;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 .txt-descri:hover{
@@ -145,4 +147,29 @@
 }
 .sent:hover{
   background-color: var(--notice-color);
+}
+  @media screen and ( max-width :720px){
+    .sec-block{
+      padding: 5px;
+    }
+    .sec-block img{
+      float: none;
+      display: block;
+      width: 85%;
+      margin: 0 auto;
+    }
+    .txt-descri {
+      line-height: 30px;
+      font-size: 18px;
+      min-width: 300px;
+    }
+    .txt-descri h2{
+      line-height: 2rem;
+    }
+    
+  }
+@media screen and ( max-width :414px) {
+  
+ 
+ 
 }
