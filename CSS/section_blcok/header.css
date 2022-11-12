@@ -1,6 +1,6 @@
-.header{
+.header {
     top: 0;
-    left: 0;    
+    left: 0;
     z-index: 999;
     height: 90px;
     font-size: var(--CHfs-20px);
@@ -11,15 +11,18 @@
 
     position: fixed;
 }
+
 .header-nav {
     align-items: center;
 }
+
 /*定義左邊logo 及 四個LI */
-.header-navList{
-   align-items: center;
+.header-navList {
+    align-items: center;
 }
+
 /* 每一個li 寬度 */
-.header-navList > li{
+.header-navList>li {
     box-sizing: border-box;
     margin-right: 5px;
     /* 定義寬度 */
@@ -31,59 +34,84 @@
 
 /* logo 圖片處理 */
 
-.header .logo{
+.header .logo {
     height: 80px;
     display: block;
-    margin-left: 8px;  
+    margin-left: 8px;
 }
-.header .logo img{
+
+.header .logo img {
     max-height: 100%;
     object-fit: contain;
 }
 
- .header-navList li a{
-    color:var(--black-color);
+.header-navList li a {
+    color: var(--black-color);
     display: block;
     padding: 25px 15px;
-} 
+}
 
 /* 目前Header 畫面填顏色 */
 
 /* 在活動消息,活動消息內文時 */
-.header-navList .news.nowPage>h3{
+.header-navList .news.nowPage>h3 {
     color: var(--body-color);
 }
-.header-navList .news.nowPage li a{
+
+.header-navList .news.nowPage li a {
     color: var(--black-color);
 }
+
 /* 在樂團介紹,關於我們,我的收藏頁面時 */
-.header-navList>li.nowPage{
+.header-navList>li.nowPage {
     background-color: var(--active-color);
 }
-.header-navList>li.nowPage .news-List{
+
+.header-navList>li.nowPage .news-List {
     background-color: var(--body-color);
 }
-.header-navList>li.nowPage a{
+
+.header-navList>li.nowPage a {
     color: var(--body-color);
     /* padding: 20px 15px; */
 }
 
 /* 在登入畫面 */
-.tool-icon a.nowPage{
+.tool-icon a.nowPage {
     background-color: var(--active-color);
 }
-.tool-icon a.nowPage i{
+
+.tool-icon a.nowPage i {
     color: white;
 }
-.icon a{
+
+.icon a {
     padding: 0px;
 }
+
 /* news hover && hedaer li 底下有底線動畫 */
-.header-navList{
+.header-navList {
     flex-grow: 1;
     height: 90px;
 }
-.header-navList > li:not(:first-child):after{
+
+.header-navList>li:not(:first-child):after {
+    content: "";
+    width: 0%;
+    height: 5px;
+    z-index: 10;
+    left: 0;
+    bottom: 1%;
+    position: absolute;
+    background-color: var(--notice-color);
+
+}
+.header-navList>li:hover::after {
+    width: 100%;
+    transition: .5s width;
+}
+
+.header-navList>li .news-title::before {
     content: "";
     width: 0%;
     height: 5px;
@@ -93,72 +121,66 @@
     position: absolute;
     background-color: var(--notice-color);
 }
-.header-navList>li:hover::after{
-    width: 100%;
-    transition: .5s width; 
-}
-.header-navList>li .news-title::before{
-    content: "";
-    width: 0%;
-    height: 5px;
-    z-index: 10;
-    left: 0;
-    bottom: 1%;
-    position: absolute;
-    background-color: var(--notice-color);
-}
-.header-navList>li:hover .news-title::before{
+
+.header-navList>li:hover .news-title::before {
     content: "";
     width: 100%;
-    transition: .5s width; 
-  
+    transition: .5s width;
+
 }
 
 /* header li 滑過字體會變色 */
-.header-navList li:hover> a,.news:hover h3.news-title{
-    color:var(--notice-color);
+.header-navList li:hover>a,
+.news:hover h3.news-title {
+    color: var(--notice-color);
 }
 
 /* news 下拉選單 */
-.news .news-title{
+.news .news-title {
     cursor: pointer;
-    color:var(--black-color);
+    color: var(--black-color);
     padding: 30px 15px;
     position: relative;
 }
-.news-List  {
-    display: none;    
+
+.news-List {
+    display: none;
     position: absolute;
-    box-sizing:border-box;
-    
+    box-sizing: border-box;
+
     width: 100%;
     top: 103%;
     left: 0%;
     text-align: center;
-    color:black;
+    color: black;
     background-color: var(--body-color);
-    
+
     box-shadow: 2px 2px 5px rgba(204, 204, 204, 0.719);
-    border: 2px solid rgba(204, 204, 204, 0.352) ;
-    
+    border: 2px solid rgba(204, 204, 204, 0.352);
+
     /* display: block; */
 }
-.header-navList li:hover .news-List{
+
+.header-navList li:hover .news-List {
     display: block;
 }
+
 /* 下拉選單HOVER 效果 */
-.news-List li:hover a{
-    background-color:var(--notice-color);
+.news-List li:hover a {
+    background-color: var(--notice-color);
     color: var(--body-color);
 }
-.news.nowPage li:hover a{
+
+.news.nowPage li:hover a {
     color: var(--body-color);
 }
-.news-List a{
+
+.news-List a {
     padding: 10px 0;
     color: var(--body-color);
 }
-.header-navList li.icon{
+
+.header-navList li.icon {
     cursor: pointer;
     flex-basis: auto;
     flex-grow: 0;
@@ -166,37 +188,44 @@
     height: 70px;
     /* padding: 0px 18px; */
 }
-.header-navList li.icon:not(:last-child){
+
+.header-navList li.icon:not(:last-child) {
     margin-left: auto;
 }
-.header-navList > .icon::after{
+
+.header-navList>.icon::after {
     bottom: -2%;
 }
-.tool-icon{
+
+.tool-icon {
     font-size: 1.5em;
     cursor: pointer;
 }
-.tool-icon i{
+
+.tool-icon i {
     display: block;
     line-height: 43px;
-    padding:0.625rem 1.125rem;
-    color:var(--black-color);
+    padding: 0.625rem 1.125rem;
+    color: var(--black-color);
     position: relative;
 }
+
 /* menu bar dispear */
-.tool-icon .fa-bars{
+.tool-icon .fa-bars {
     display: none;
 }
-.tool-icon .fa-bars.active{
+
+.tool-icon .fa-bars.active {
     background: var(--active-color);
     color: white;
 }
+
 /* 右邊icon hover 效果 */
 .tool-icon i:hover {
     color: var(--notice-color);
 }
 
-.tool-icon i::after{
+.tool-icon i::after {
     content: "";
     width: 0%;
     height: 5px;
@@ -205,39 +234,42 @@
     position: absolute;
     background-color: var(--notice-color);
 }
-.tool-icon i:hover::after{
+
+.tool-icon i:hover::after {
     width: 100%;
-    transition: .5s all; 
+    transition: .5s all;
 }
 
 
 /* RWD */
-@media screen and (max-width: 1400px) {
-  
-}
+@media screen and (max-width: 1400px) {}
+
 @media screen and (max-width: 780px) {
-    
-    .header-navList li{
-        flex-basis: 110px;    
+
+    .header-navList li {
+        flex-basis: 110px;
         transition: .8s flex-basis;
     }
+
     .news-List li a {
         padding: 20px 50px;
     }
-    
+
 }
-@media screen and (max-width: 700px){
-    .header .logo{
+
+@media screen and (max-width: 700px) {
+    .header .logo {
         margin-right: auto;
         transition: none;
     }
-     .header-navList{
+
+    .header-navList {
         left: -105%;
         flex-direction: column;
         flex-basis: auto;
         position: absolute;
         top: 100%;
-        background-color:var(--body-color);
+        background-color: var(--body-color);
         width: 80%;
         min-width: 420px;
         height: calc(100vh - 90px);
@@ -245,23 +277,26 @@
         box-shadow: 5px 0px 10px #ccc;
         transition: .85s left ease-in-out;
     }
-    .header-navList.iconActive{
+
+    .header-navList.iconActive {
         left: 0%;
         overflow-y: scroll;
         height: calc(100vh - 40px);
     }
 
-    .header-navList >li{
+    .header-navList>li {
         flex-basis: 60px;
         text-align-last: left;
         width: 100%;
         border-bottom: 1px var(--non-notice-color) solid;
         /* transition: 0.8s width ; */
     }
-    .header-navList li a{
+
+    .header-navList li a {
         padding: 20px 30px;
     }
-    .news .slideToggle.news-title::after{
+
+    .news .slideToggle.news-title::after {
         content: "-";
         position: absolute;
         right: 10px;
@@ -270,76 +305,86 @@
         font-weight: bold;
         transition: transform .35s;
     }
-    .news:hover .slideToggle.news-title::after{
+
+    .news:hover .slideToggle.news-title::after {
         transform: scale(1.3);
     }
-    .news .news-title.slideToggle.active::after{
-        content:"+";
+
+    .news .news-title.slideToggle.active::after {
+        content: "+";
         font-size: 25px;
         top: 17px;
     }
-   
+
     /* 最新消息 */
-    .news .news-List{
+    .news .news-List {
         position: static;
         display: block;
         box-shadow: none;
         border: none;
         background-color: transparent;
     }
-    .news-List li{
+
+    .news-List li {
         font-size: 0.8em;
         text-align-last: left;
-        border:none;
+        border: none;
     }
-    .news .news-title{
+
+    .news .news-title {
         padding: 20px 30px;
     }
 
-   
-    .header-navList .news a{
-        padding: 15px 80px; 
+
+    .header-navList .news a {
+        padding: 15px 80px;
     }
+
     /* 搜尋,會員 */
-    .header-navList .icon i{
+    .header-navList .icon i {
         font-size: 20px;
         font-weight: bold;
     }
-    .header-navList .icon i::before{
-        position:absolute;
+
+    .header-navList .icon i::before {
+        position: absolute;
         left: 120px;
     }
-    .header-navList i.fa-user::after{
+
+    .header-navList i.fa-user::after {
         content: attr(title);
-      
+
     }
-    .header-navList i.fa-magnifying-glass::after{
-        content: attr(title);    
+
+    .header-navList i.fa-magnifying-glass::after {
+        content: attr(title);
     }
-    
+
     /* Menu Icon */
-    .tool-icon{
+    .tool-icon {
         /* margin-left: auto; */
     }
-    .tool-icon .fa-bars{
-        display: block;
-    } 
-}
-@media screen and (max-width: 414px) {
-   
 
-    .header-navList{
+    .tool-icon .fa-bars {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 414px) {
+
+
+    .header-navList {
         flex-direction: column;
         position: absolute;
         /* bottom: -260%; */
-      
+
         background-color: var(--body-color);
-        width: calc(100% - 10px) ;
+        width: calc(100% - 10px);
         min-width: 0;
     }
-    
-    .header-navList > li{
+
+    .header-navList>li {
         width: 100%;
     }
-    
+
 }

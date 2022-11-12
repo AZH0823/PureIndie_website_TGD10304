@@ -11,74 +11,82 @@
 @import url(./section_blcok/wanted.css);
 /* 共用display */
 
-body{
+body {
     font-size: 50px;
     background-image: linear-gradient(rgba(224, 224, 224, 0.8),
-                rgba(255, 255, 255, 0.3)),
-            url(../img/texture/body_bg.png);
+            rgba(255, 255, 255, 0.3)),
+        url(../img/texture/body_bg.png);
     transition: 2s background-image ease-in;
 }
 
-.fuild-contanier{
+.fuild-contanier {
     width: 100%;
 }
-.wrap{
+
+.wrap {
     max-width: 1440px;
     margin: 0 auto;
     /* outline: 2px solid yellow; */
 }
 
-.d-flex{
-    display: flex; 
+.d-flex {
+    display: flex;
 }
-.d-flex-inline{
+
+.d-flex-inline {
     /* display: inline-flex; */
 }
-.b-shadow{
+
+.b-shadow {
     box-shadow:
-    rgb(60 64 67 / 30%) 0px 1px 2px 0px,
-    rgb(60 64 67 / 15%) 0px 2px 6px 2px;
-    border-radius:5px;
+        rgb(60 64 67 / 30%) 0px 1px 2px 0px,
+        rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    border-radius: 5px;
     overflow: hidden;
 }
-main{
+
+main {
     /* overflow: hidden; */
 }
-section{
+
+section {
     padding: 60px 0;
-    border-bottom:1.5px solid #ccc ;
-    
+    border-bottom: 1.5px solid #ccc;
+
 }
+
 .footer {
     font-size: 16px;
     font-weight: var(--fw-L-300);
-  }
-.message-own{
+}
+
+.message-own {
     outline: yellow solid 4px;
     justify-items: center;
     align-items: center;
 }
 
 /* in moblie and pad ,click menuIcon  add or Toggle this className */
-body.overflow{
+body.overflow {
     overflow: hidden;
     background-image: linear-gradient(rgb(54 54 54 / 80%),
-     rgb(35 35 35 / 86%)), url(../img/texture/body_bg.png);
+            rgb(35 35 35 / 86%)), url(../img/texture/body_bg.png);
 }
 
 @media screen and (max-width:960px) {
-    section{
-       padding: 30px 0; 
+    section {
+        padding: 30px 0;
     }
 }
+
 @media screen and (max-width:540px) {
-    section{
-       padding: 15px 0; 
+    section {
+        padding: 15px 0;
     }
 }
 
 @media screen and (max-width:414px) {
-    section{
-       padding: 0 0; 
+    section {
+        padding: 0 0;
     }
 }
