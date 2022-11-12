@@ -1,10 +1,16 @@
+.seach-filiter-all{
+    padding: 20px;
+    gap: 20px;
+}
 .seach-filiter{
+    position: sticky;
+    top: 13%;
     box-sizing: border-box;
-    flex-basis: 420px;
-    width: 420px;
+    flex-basis: 40%;
+    max-width: 400px;
     padding: 25px 20px 20px 20px;
     /* outline: 2px solid red; */
-
+    align-self: flex-start;
     background: white;
     opacity: .85;
     border: 1px solid #ccc;
@@ -71,7 +77,7 @@
 .seach-filiter li > a{
     display: block;
     cursor: pointer;
-    padding: 10px 25px;
+    padding: 10px 20px;
     border-radius: 15px;
     outline: 1px solid var(--non-notice-color);
     box-shadow:
@@ -98,11 +104,9 @@
 
 /* 搜尋結果頁面 */
 .filter-list{
-    /* outline:2px green solid;  */
-    padding: 20px;
-
-    width: 220px;
-    margin-bottom: 20vh;
+    /* outline:2px green solid;  */    
+    width: 50%;
+    /* margin-bottom: 20vh; */
     flex-grow: 1;
 }
 .filter-list .title::after{
@@ -111,7 +115,8 @@
     left: 0;
     bottom: -15px;
     background-color: var(--notice-color);
-    width: 250px;
+    max-width: 250px;
+    width: 40%;
     height: 10px;
 }
 .filter-list .title::before{
@@ -120,7 +125,8 @@
     left: 0px;
     bottom: -14px;
     background-color: var(--notice-color);
-    width: 500px;
+    width: 75%;
+    max-width: 450px;
     height: 6px;
     opacity: 0.3;
 }
@@ -154,6 +160,10 @@
     rgb(60 64 67 / 30%) 0px 1px 2px 0px,
     rgb(60 64 67 / 15%) 0px 2px 6px 2px;
     border-radius:5px;
+   
+    width: 22%;
+    min-width: 200px;
+    box-sizing: border-box;
     overflow: hidden;
 }
 
@@ -171,7 +181,7 @@
 .hito-list .hito-list-img img{
     display: block;
     margin: 0 auto;
-    padding: 30px;
+    padding: 30px 0px;
 }
 .band-album-list .band-album-title,
 .serch-final-list .indieGroup-title,
@@ -224,4 +234,82 @@
     border-bottom: 0px;
     background-color: var(--body-color);
     justify-content: space-evenly;
+}
+
+@media screen and (max-width:1440px) {
+    .serch-final-list,
+    .band-album-list,
+    .recommond-list,
+    .hito-list{
+        width: 30%;
+    }
+}
+@media screen and (max-width:1100px){
+    .seach-filiter-all{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .seach-filiter{
+        flex-basis: auto;
+        margin: 0 auto;
+        width: 90%;
+        max-width: none;
+        position: static;
+    }
+    .filter-list{
+        width: 90%;
+        
+    } 
+    .serch-final-lists,
+    .band-album-lists,
+    .recommond-lists,
+    .hito-lists{
+        /* justify-content: space-around; */
+        column-gap: calc( 5% - 5px);
+        
+    }
+    .serch-final-list,
+    .band-album-list,
+    .recommond-list,
+    .hito-list
+    {
+        width: 30%;
+    }
+}
+@media screen and (max-width:780px) {
+    .serch-final-lists,
+    .band-album-lists,
+    .recommond-lists,
+    .hito-lists{
+        /* justify-content: space-around; */
+        column-gap: 5%;
+
+        
+    }
+    .serch-final-list,
+    .band-album-list,
+    .recommond-list,
+    .hito-list
+    {
+        flex-grow: 1;
+    }
+}
+  
+    
+   
+    
+
+
+@media screen and (max-width : 414px) {
+    .seach-filiter{
+        width: 92.5%;
+    }
+    .seach-filiter .slideToggleContainer{
+        text-align: center;
+    }
+    .seach-filiter li > a{
+        padding: 10px 15px;
+        
+    }
 }
