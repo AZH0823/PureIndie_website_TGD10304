@@ -1,4 +1,6 @@
-
+.recommend{
+  padding: 0 0%;
+}
 /* 標題 */
 .recommend h1 {
   margin-left: 2.2rem;
@@ -23,7 +25,8 @@
   left: 0px;
   bottom: -14px;
   background-color: var(--notice-color);
-  width: 330px;
+  max-width: 330px;
+  width: 24%;
   height: 6px;
   opacity: 0.3;
 
@@ -31,10 +34,10 @@
 
 
 /* container */
-.recommend-lists{
+.recommend-lists {
   width: 100%;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: stretch;
   /* column-gap: 2rem; */
   gap: 2rem;
 
@@ -44,7 +47,7 @@
 }
 
 /* list-card*/
-.recommend-lists .recommend-list{
+.recommend-lists .recommend-list {
   flex-basis: 300px;
   padding: 0;
   border-radius: 15px;
@@ -56,27 +59,31 @@
   transform: translateY(-0px);
   transition: .35s;
 }
-.recommend-list:hover{
+
+.recommend-list:hover {
   filter: grayscale(0%);
   transform: translateY(-10px);
 }
+
 /* 圖片  */
-.recommend-list img{
+.recommend-list img {
   display: block;
+  width: 100%;
+  object-fit: scale-down;
 }
 
-.recommend-list h2{
+.recommend-list h2 {
   text-align: center;
   margin: 10px 15px;
   line-height: 1.4;
 }
 
-.recommend-list .recommend-list-icons{
+.recommend-list .recommend-list-icons {
   margin: 10px 15px;
   text-align: right;
 }
 
-.recommend-list-icons >a{
+.recommend-list-icons>a {
   font-size: 20px;
   display: inline-flex;
   width: 30px;
@@ -87,19 +94,65 @@
   justify-content: center;
 
   box-shadow:
-      rgb(60 64 67 / 30%) 0px 1px 2px 0px,
-      rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    rgb(60 64 67 / 30%) 0px 1px 2px 0px,
+    rgb(60 64 67 / 15%) 0px 2px 6px 2px;
 }
-.recommend-list-icons >a:nth-child(2){
+
+.recommend-list-icons>a:nth-child(2) {
   margin: 0 3px;
 }
 
-.recommend-list-icons a:hover{
+.recommend-list-icons a:hover {
   background-color: var(--notice-color);
   color: var(--body-color);
 }
-.recommend-list-icons a:active{
+
+.recommend-list-icons a:active {
   background-color: var(--active-color);
   color: var(--body-color);
 }
 
+@media screen and (max-width:1440px) {
+  .recommend-lists .recommend-list {
+    flex-grow: 1;
+    flex-basis: 300px;
+    max-width: 380px;
+    
+  }
+}
+
+@media screen and (max-width:1060px) {
+  .recommend h1::after{
+    width: 50%;
+  }
+  .recommend-lists .recommend-list{
+      flex-basis: 25%;
+  }
+}
+@media screen and (max-width:720px){
+  .recommend-lists .recommend-list{
+      flex-basis: 30%;
+  }
+  .recommend h1 {
+    margin: 1.5rem 0px 1.5rem 2rem;
+  }
+}
+
+@media screen and (max-width:414px) {
+
+  .recommend h1 {
+    margin: 0;
+    margin: 1.5rem 0 1.25rem 1.25rem;
+  }
+
+  .recommend .recommend-lists {
+    justify-content: center;
+  }
+  .recommend-lists .recommend-list{
+      flex-basis: 100%;
+      flex-grow: 0;
+  }
+  
+
+  
+}
