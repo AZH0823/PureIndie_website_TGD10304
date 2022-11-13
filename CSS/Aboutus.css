@@ -22,7 +22,7 @@ body{
 }
 
 .wrap {
-  /* max-width: 1440px; */
+  max-width: 1440px;
   margin: 0 auto;
   /* outline: 2px solid yellow; */
 }

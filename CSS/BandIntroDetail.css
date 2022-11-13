@@ -61,3 +61,15 @@ body.overflow{
   background-image: linear-gradient(rgb(54 54 54 / 80%),
    rgb(35 35 35 / 86%)), url(../img/texture/body_bg.png);
 }
+
+.main-aboutus{
+  padding: 0 2%;
+}
+
+
+
+@media screen and (max-width:414px) {
+  .band-detail-All{
+    padding: 0 5%;
+  }
+}

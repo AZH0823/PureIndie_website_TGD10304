@@ -144,7 +144,7 @@
     }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 414px) {
    
     .footer-about .news-detail,
     .footer-about .about-detail{
@@ -163,5 +163,10 @@
     }
     .about-link,.new-link {
         flex-direction: column;
+    }
+    .footer-copyright{
+     
+        margin: 20px auto;
+     
     }
 }

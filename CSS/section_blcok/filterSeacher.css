@@ -46,15 +46,18 @@
     cursor: pointer;
     position: relative;
 }
+.music-kind-tag .slideToggleContainer{
+    margin-right: 5%;
+}
 /* 摺疊選單預設偽元素樣式  */
 .title.slideToggle::before{
     content: "-";
     position: absolute;
     font-size: 30px;
     font-weight: bold;
-    bottom: 0px;
+    bottom: -33px;
     right: 5px;
-    
+    color: var(--body-color);
     transition: .3s ;
 }
 .title.slideToggle:hover::before{
@@ -233,7 +236,7 @@
 .band-detail-album .band-album-lists{
     border-bottom: 0px;
     background-color: var(--body-color);
-    justify-content: space-evenly;
+    padding: 2% 2%;
 }
 
 @media screen and (max-width:1440px) {
@@ -278,6 +281,7 @@
     }
 }
 @media screen and (max-width:780px) {
+   
     .serch-final-lists,
     .band-album-lists,
     .recommond-lists,
@@ -305,11 +309,26 @@
     .seach-filiter{
         width: 92.5%;
     }
+     .band-detail-album .band-album-lists{
+        padding: 10% 2%;
+    }
+    .serch-final-lists,
+    .band-album-lists,
+    .recommond-lists,
+    .hito-lists{
+        justify-content: center;
+    }
+    .serch-final-list, .band-album-list, .recommond-list, .hito-list{
+        flex-grow:0;
+    }
     .seach-filiter .slideToggleContainer{
         text-align: center;
     }
     .seach-filiter li > a{
         padding: 10px 15px;
         
+    }
+    .music-kind-tag .slideToggleContainer li a{
+        padding: 5px 15px;
     }
 }
