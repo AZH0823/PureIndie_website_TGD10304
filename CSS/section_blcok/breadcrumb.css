@@ -7,6 +7,8 @@
 
 .breadcrumb li {
   padding: 10px 20px 10px 0px;
+  position: relative;
+  flex-shrink: 0;
 }
 
 .breadcrumb li a {
@@ -20,11 +22,20 @@
 }
 
 .breadcrumbList li:last-child a {
-  color: var(--notice-color);
   font-weight: 100;
   font-size: 16px;
   cursor: pointer;
+  color: var(--notice-color);
   font-weight: var(--fw-B-700);
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  text-overflow: ellipsis;
+  max-width: 600px;
+  width: 1200%;
+  top: 10px;
+  left: 17px;
+
 }
 
 .breadcrumbList li:hover a {
@@ -34,6 +45,7 @@
 
 .tagSpan {
   margin: 35px 0 20px -5px;
+  padding: 0 3%;
   display: inline-flex;
 }
 
@@ -60,14 +72,32 @@
 }
 
 
+@media screen and (max-width:760px) {
+  .newsEventDetail .breadcrumbList li:last-child a {
+    width: 800%;
+  }
+}
+@media screen and (max-width:600px) {
+    .newsEventDetail .breadcrumbList li:last-child a {
+    width: 320%;
+  }
+}
 
 @media screen and (max-width:414px) {
-    .main-aboutus .tagSpan{
-      margin: 35px 0 20px -25px;
-    }
-    .tagSpan span{
-      margin-right: 18px;
-      padding: 5px;
-      width: 40px;
-    }
+  .main-aboutus .tagSpan {
+    margin: 35px 0 20px -25px;
+  }
+
+  .newsEventDetail .breadcrumbList li:last-child a {
+    display: block;
+  }
+
+  .tagSpan span {
+    margin-right: 18px;
+    padding: 5px;
+    width: 40px;
+  }
+    .newsEventDetail .breadcrumbList li:last-child a {
+    width: 300%;
+  }
 }

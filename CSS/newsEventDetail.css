@@ -65,9 +65,10 @@ main.newsEventDetail h2 {
 .news-title-bar {
   width: 90%;
   margin: 0 auto;
-  padding: 0px 35px 10px 35px;
+  padding: 0px 2.5% 1.4% 2.5%;
   /* overflow: hidden; */
-
+  box-sizing: border-box;
+  line-height: 1.2;
   display: flex;
   justify-items: center;
   align-items: center;
@@ -164,7 +165,7 @@ main.newsEventDetail h2 {
 
 /* 報導內文 */
 #news-txt{
-  padding: 50px 36px 50px 120px;
+  padding: 3.5% 2.5% 3.5% 8.5%;
   line-height: 1.85;
   text-indent: 3rem;
   font-size: 20px;
@@ -179,7 +180,8 @@ main.newsEventDetail h2 {
 #news-txt .decos:first-child::before{
   content: '';
   height: 10px;
-  width: 250px;
+   width: 14%;
+  max-width: 200px;
   position: absolute;
   top: -4px;
   right: 0;
@@ -188,7 +190,8 @@ main.newsEventDetail h2 {
 #news-txt .decos:first-child:after{
   content: '';
   position: absolute;
-  width: 850px;
+  max-width: 850px;
+  width: 60%;
   top: -2px;
   right: 0;
   height: 6px;
@@ -198,7 +201,8 @@ main.newsEventDetail h2 {
 #news-txt .decos:last-child::before{
   content: '';
   height: 10px;
-  width: 200px;
+  width: 14%;
+  max-width: 200px;
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -207,7 +211,8 @@ main.newsEventDetail h2 {
 #news-txt .decos:last-child::after{
   content: '';
   height: 6px;
-  width: 850px;
+  max-width: 850px;
+  width: 60%;
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -225,7 +230,7 @@ main.newsEventDetail h2 {
 .message.box {
 }
 .message.card{
-  padding: 35px;
+  padding: 2.5%;
   border: 1px var(--non-notice-color) solid;
   border-radius: 5px;
   margin-left: 15%;
@@ -247,6 +252,7 @@ main.newsEventDetail h2 {
   max-width: 100px;
   margin-right: 1.5rem;
   border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .message-own img {
@@ -265,7 +271,7 @@ main.newsEventDetail h2 {
 
 .input{
   width: 100%;
-  min-width: 240px;
+  min-width: 250px;
 }
 .message-own input[type="text"]{
   display: inline-block;
@@ -323,7 +329,6 @@ main.newsEventDetail h2 {
   background-color: var(--non-notice-color);
 }
 .message-txt{
-  text-align: center;
   flex-grow: 1;
 }
 .message-other-tag{
@@ -342,5 +347,61 @@ main.newsEventDetail h2 {
   max-width: 70px;
 }
 
+@media screen and (max-width: 1293px) {
+  .news-title-bar .news-title{
+    margin-bottom: 20px;
+  }
+   .message.box{
+    width: 100%;
+  }
+  .message.box .message.card{
+    margin-left: 0;
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .news-txt #news-txt{
+    padding: 5%;
+  }
+  main .message-txt h2{
+    font-size:  var(--CHfs-18px);
+  }
+  main #news-txt{
+    font-size:  var(--CHfs-18px);
+  }
+ 
+}
+
+@media screen and (max-width: 414px) {
+  .news-title-bar{
+    padding: 0px;
+  }
+  .socail-list-icons{
+    margin: 0;
+  }
+  .message.box .img{
+    width: 70px;
+  }
+  .socail-list-icons a{
+    margin-left: 3px;
+    margin-bottom: 10px;
+  }
+
+  .message-own input[type="text"]{
+    width: calc(85% - 94px);
+    
+  }
+
+  .message-other-tag{
+    font-size: 14px;
+  }
+
+ .message-others .message-other-tag p+p{
+    display: none;
+  }
+  
+}
 
 
