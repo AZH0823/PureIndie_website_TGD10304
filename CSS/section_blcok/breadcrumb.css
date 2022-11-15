@@ -20,19 +20,20 @@
   /* //+選取器，選到自己的下一層元素 */
   padding-right: 20px;
 }
-
-.breadcrumbList li:last-child a {
+.breadcrumbList li:last-child a{
   font-weight: 100;
   font-size: 16px;
   cursor: pointer;
   color: var(--notice-color);
   font-weight: var(--fw-B-700);
+}
+.newsEventDetail .breadcrumbList li:last-child a {
   overflow: hidden;
   white-space: nowrap;
   position: absolute;
   text-overflow: ellipsis;
   max-width: 600px;
-  width: 1200%;
+  width: 2000%;
   top: 10px;
   left: 17px;
 
