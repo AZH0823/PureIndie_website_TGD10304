@@ -271,14 +271,13 @@ main.newsEventDetail h2 {
 
 .input{
   width: 100%;
-  min-width: 250px;
 }
 .message-own input[type="text"]{
   display: inline-block;
   box-sizing: border-box;
   width: calc(100% - 94px);
  
-  padding: 10px 10px 10px 1.5rem;
+  padding: 10px 10px 10px 4.5%;
   border: 2px solid var(--non-notice-color);
   border-right: 0px;
   height: 40px;
@@ -390,8 +389,8 @@ main.newsEventDetail h2 {
   }
 
   .message-own input[type="text"]{
-    width: calc(85% - 94px);
-    
+    width: calc(110% - 94px);
+    font-size: 12px;
   }
 
   .message-other-tag{

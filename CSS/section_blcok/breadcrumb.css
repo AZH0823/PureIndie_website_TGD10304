@@ -102,3 +102,9 @@
     width: 300%;
   }
 }
+
+@media screen and (max-width:375px) {
+    .newsEventDetail .breadcrumbList li:last-child a {
+    width: 280%;
+  }
+}
