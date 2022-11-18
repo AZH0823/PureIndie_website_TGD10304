@@ -1,0 +1,91 @@
+const swiper_wider = new Swiper('.swiper-wide', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    speed: 2000,
+    autoplay: {
+        delay: 2000,
+        stopOnLastSlide: false,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
+    grabCursor: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+    // breakpoints:{
+    //     1280: {  //当屏幕宽度大于等于1280
+    //         slidesPerView: 3,
+    //         spaceBetween: 20,
+    //     }
+    // }
+    slidesPerView: 'auto',
+
+    centeredSlides: true,
+});
+
+
+// 滑鼠移入移出暫停Swiper效果
+$(".swiper-wide").mouseenter(function () {
+    // console.log(`enter`)
+    swiper_wider.autoplay.stop();
+});
+
+$(".swiper-wide").mouseleave(function () {
+    // console.log(`leave`)
+    swiper_wider.autoplay.start();
+});
+
+
+
+var wantedSwiper = new Swiper(".wanted-list-sidler", {
+    grabCursor: true,
+    loop: true,
+    spaceBetween: 20,
+    direction: 'horizontal',
+    slideToClickedSlide: true,
+    // centeredSlides: true,
+    // slidesPerView: 1,
+    pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+        dynamicMainBullets: 2,
+        clickable: true
+    },
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        414: {
+            slidesPerView: 1,
+            spaceBetween: 50,
+         
+        },
+        800: {
+            slidesPerView: 2,
+             spaceBetween: 40,
+       
+        },
+        1440: {
+            slidesPerView: 3,
+            spaceBetween: 80,
+         
+        }
+
+    }
+});

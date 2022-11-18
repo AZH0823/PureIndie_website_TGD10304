@@ -20,38 +20,29 @@
   display: flex;
   height: 35vw;
   min-height: 180px;
-  /* 0.7 一張0.7 */
-  /* height: 576px; */
-  /* width: 100%; */
   position: relative;
   transform:translateX(-199%);
-  /* gap: 30px; */
   transition:transform 1.25s ease-in-out;
 }
 
 /* 假裝背景圖 */
-.box{
-  /* width: 100%; */
-  /* min-height: 180px; */
-  /* width: 90vw; */
-  /* width: 70vw; */
-
+.silder-wide .box{
   width: 100%;
   flex-shrink: 0;
   box-sizing: border-box;
-  height: 100%;
-  padding-right: 30px;
-  /* outline: 6px solid paleturquoise; */
-  /* width: 1140px; */
- 
+  height: 100%; 
+  transition: .85s all ease-in-out;
 }
 
 .container .box img{
   display: block;
   width: 100%;
   height: 100%;
- 
+  min-height: 180px;
   object-fit: cover;
+}
+.silder-wide .container .box:hover{
+  transform: scale(1.1);
 }
 
 /* 左右箭頭 */
@@ -68,20 +59,22 @@
 }
 /* 向左Prev */  
 .slider-scroll-controller #prev{
+  margin-top: 0;
   transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
-  left: 5%;
+  left: 7%;
   width: 60px;
   height: 180px;
   /* outline: 2px solid red;   */
 }
 /* 向後NEXT */
 .slider-scroll-controller #next{
+  margin-top: 0;
   transform: scaleX(-1) translate(-50%,-50%);
   position: absolute;
   top: 50%;
-  right: 5%;
+  right: 7%;
   width: 60px;
   height: 180px;
   /* outline: 2px solid yellow; */
@@ -111,7 +104,7 @@ span#next i {
   transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
-  right: 5%;
+  right: -5%;
   /* outline: green 3px solid; */
 }
 
@@ -127,6 +120,17 @@ span#next i {
 .slider-scroll-controller span:hover i{
   color:var(--body-color)
 }
+.swiper-wide .swiper-slide{
+  width: 80%;
+  margin: 0 3%;
+}
 
+@media screen and (max-width:414px) {
+  .container.swiper-wrapper{
+    min-height: 180px;
+  }
 
-
+  .swiper-wide .swiper-slide{
+    width: 100%; 
+  }
+}

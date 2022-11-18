@@ -1,10 +1,10 @@
 .big-wide-banner{
     background: linear-gradient(black,rgb(11, 11, 84));
-    border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .about-banner{
     margin-top: 80px;
+    overflow: hidden;
 }
 .about-banner-titles{
     box-sizing: border-box;
@@ -286,7 +286,7 @@
         margin-top: 30px;
         margin-bottom: 10px;
         transform: translateX(0px);
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     .about-banner-ablumns .ablumn{
         flex-shrink: 0;
@@ -347,6 +347,9 @@
     .about-banner .about-banner-ablumns{
         margin-top: -10px;
          margin-bottom: 30px;
+    }
+    .silder-wide .slider-scroll-controller #next {
+        right: 8%;
     }
 
 
