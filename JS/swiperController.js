@@ -74,18 +74,63 @@ var wantedSwiper = new Swiper(".wanted-list-sidler", {
         414: {
             slidesPerView: 1,
             spaceBetween: 50,
-         
+
         },
         800: {
             slidesPerView: 2,
-             spaceBetween: 40,
-       
+            spaceBetween: 40,
+
         },
         1440: {
             slidesPerView: 3,
             spaceBetween: 80,
-         
+
         }
 
     }
+
+
+
+})
+
+
+
+let isCellphone;
+const aboutswiper = new Swiper('.about-swiper', {
+    slidesPerView: 'auto',
+    // centeredSlides: true,
+    grabCursor: true,
+    freeMode: true,
+    speed:400,
+    spaceBetween: 30,
+    scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+    }
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+    let w = window.innerWidth
+    if (w <= 960) {
+        aboutswiper.enable();
+        aboutswiper.init()
+    } else if (w > 960) {
+        aboutswiper.destroy(false, true)
+        aboutswiper.disable();
+
+        document.querySelector('.about-wrapper.swiper-wrapper').style.transform = `translate3d(0px, 0px, 0px)`
+    }
+})
+window.addEventListener('resize', () => {
+    let w = window.innerWidth
+    if (w <= 960) {
+        aboutswiper.enable();
+        aboutswiper.init()
+        isCellphone = false
+    } else if (w > 960) {
+        aboutswiper.disable();
+        aboutswiper.destroy(false, true)
+        document.querySelector('.about-wrapper.swiper-wrapper').style.transform = `translate3d(0px, 0px, 0px)`
+    }
+
+})

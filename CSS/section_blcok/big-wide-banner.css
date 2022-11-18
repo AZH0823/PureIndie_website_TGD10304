@@ -349,9 +349,11 @@
          margin-bottom: 30px;
     }
     .silder-wide .slider-scroll-controller #next {
-        right: 8%;
+        right: 8.5%;
     }
-
+    .silder-wide .slider-scroll-controller #prev {
+        left: 8.5%;
+    }
 
     
 }

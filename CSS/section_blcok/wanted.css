@@ -244,6 +244,10 @@ li.wanted-listcard:hover{
   height: 50px;
 }
 
+.ccc{
+  transform: translate3d(0px,0px,0px);
+}
+
 
 @media screen and (max-width:768px) {
   .wanted-listcard.swiper-slide{
