@@ -51,6 +51,7 @@ $(".swiper-wide").mouseleave(function () {
 
 var wantedSwiper = new Swiper(".wanted-list-sidler", {
     grabCursor: true,
+    slidesPerGroup : 3,
     loop: true,
     spaceBetween: 20,
     direction: 'horizontal',
@@ -74,12 +75,12 @@ var wantedSwiper = new Swiper(".wanted-list-sidler", {
         414: {
             slidesPerView: 1,
             spaceBetween: 50,
-
+              slidesPerGroup : 1,
         },
         800: {
             slidesPerView: 2,
             spaceBetween: 40,
-
+            slidesPerGroup : 2,
         },
         1440: {
             slidesPerView: 3,
@@ -101,6 +102,8 @@ const aboutswiper = new Swiper('.about-swiper', {
     // centeredSlides: true,
     grabCursor: true,
     freeMode: true,
+    // 初始化編號3
+    initialSlide: 1.5,
     speed:400,
     spaceBetween: 30,
     scrollbar: {

@@ -357,3 +357,9 @@
 
     
 }
+
+@media screen and (max-width:375px) {
+    .about-banner-titles{
+        padding: 30px 40px;
+    }
+}

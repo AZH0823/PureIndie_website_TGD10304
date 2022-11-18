@@ -20,6 +20,7 @@
 .seach-filiter .music-kind,
 .seach-filiter .mood-kind{
     margin-bottom: 30px;
+    position: relative;
 }
 .seach-filiter h1:after{
     content: "";
@@ -49,15 +50,20 @@
 .music-kind-tag .slideToggleContainer{
     margin-right: 5%;
 }
+
+.band-block-all .title.slideToggle::before{
+    color: var(--body-color);
+        bottom: -25px;
+}
 /* 摺疊選單預設偽元素樣式  */
 .title.slideToggle::before{
     content: "-";
     position: absolute;
     font-size: 30px;
     font-weight: bold;
-    bottom: -33px;
+    bottom: 0%;
     right: 5px;
-    color: var(--body-color);
+    color: var(--black-color);
     transition: .3s ;
 }
 .title.slideToggle:hover::before{
@@ -76,16 +82,16 @@
     display: inline-block;
     font-size: 16px;
     border-radius: 15px;
+    
+    box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    /* overflow: hidden; */
 }
 .seach-filiter li > a{
-    display: block;
+    display: inline-block;
     cursor: pointer;
     padding: 10px 20px;
     border-radius: 15px;
-    outline: 1px solid var(--non-notice-color);
-    box-shadow:
-    rgb(60 64 67 / 30%) 0px 1px 2px 0px,
-    rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    
 
 }
 

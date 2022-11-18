@@ -262,8 +262,8 @@ body.overflow {
   display: inline-block;
   border-radius: 50%;
   background-color: var(--body-color);
-  outline: 1px solid var(--non-notice-color);
-  box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 6467 / 15%) 0px 2px 6px 2px;
+  /* outline: 1px solid var(--non-notice-color); */
+  box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
   position: relative;
 }
 

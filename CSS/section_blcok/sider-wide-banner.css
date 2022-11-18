@@ -21,7 +21,7 @@
   height: 35vw;
   min-height: 180px;
   position: relative;
-  transform:translateX(-199%);
+  /* transform:translateX(-199%); */
   transition:transform 1.25s ease-in-out;
 }
 
@@ -49,7 +49,7 @@
 .slider-scroll-controller{
   /* outline: 4px skyblue solid; */
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
   top: 50%;
 }
 .slider-scroll-controller span{
@@ -61,7 +61,7 @@
 .slider-scroll-controller #prev{
   margin-top: 0;
   transform: translate(-50%, -50%);
-  position: absolute;
+  /* position: absolute; */
   top: 50%;
   left: 7%;
   width: 60px;
@@ -72,7 +72,7 @@
 .slider-scroll-controller #next{
   margin-top: 0;
   transform: scaleX(-1) translate(-50%,-50%);
-  position: absolute;
+  /* position: absolute; */
   top: 50%;
   right: 7%;
   width: 60px;
