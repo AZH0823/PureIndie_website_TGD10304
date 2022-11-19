@@ -61,7 +61,7 @@
 .slider-scroll-controller #prev{
   margin-top: 0;
   transform: translate(-50%, -50%);
-  /* position: absolute; */
+  position: absolute;
   top: 50%;
   left: 7%;
   width: 60px;
@@ -72,7 +72,7 @@
 .slider-scroll-controller #next{
   margin-top: 0;
   transform: scaleX(-1) translate(-50%,-50%);
-  /* position: absolute; */
+  position: absolute;
   top: 50%;
   right: 7%;
   width: 60px;
