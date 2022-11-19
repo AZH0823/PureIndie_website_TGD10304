@@ -51,11 +51,10 @@ $(".swiper-wide").mouseleave(function () {
 
 var wantedSwiper = new Swiper(".wanted-list-sidler", {
     grabCursor: true,
-    slidesPerGroup : 3,
-    loop: true,
+    // loop: true,
     spaceBetween: 20,
     direction: 'horizontal',
-    slideToClickedSlide: true,
+    // slideToClickedSlide: true,
     // centeredSlides: true,
     // slidesPerView: 1,
     pagination: {
@@ -75,12 +74,12 @@ var wantedSwiper = new Swiper(".wanted-list-sidler", {
         414: {
             slidesPerView: 1,
             spaceBetween: 50,
-              slidesPerGroup : 1,
+       
         },
         800: {
             slidesPerView: 2,
             spaceBetween: 40,
-            slidesPerGroup : 2,
+          
         },
         1440: {
             slidesPerView: 3,
