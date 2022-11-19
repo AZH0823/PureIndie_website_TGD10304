@@ -69,6 +69,7 @@
 /* 專輯LIST 整個寬度 */
 li.wanted-listcard{
   box-sizing: border-box;
+  flex-shrink: 0;
   /* width: 30%; */
   /* min-width: 320px; */
   padding: 10px;
