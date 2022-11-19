@@ -51,17 +51,16 @@ $(".swiper-wide").mouseleave(function () {
 
 var wantedSwiper = new Swiper(".wanted-list-sidler", {
     grabCursor: true,
-    // loop: true,
+    loop: true,
     spaceBetween: 20,
     direction: 'horizontal',
-    // slideToClickedSlide: true,
-    // centeredSlides: true,
-    // slidesPerView: 1,
+    slideToClickedSlide: true,
+    
     pagination: {
         el: ".swiper-pagination",
         dynamicBullets: true,
         dynamicMainBullets: 2,
-        clickable: true
+        clickable: true,
     },
     scrollbar: {
         el: '.swiper-scrollbar',
