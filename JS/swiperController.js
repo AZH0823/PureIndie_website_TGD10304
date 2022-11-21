@@ -1,3 +1,4 @@
+// 大圖 輪播圖
 const swiper_wider = new Swiper('.swiper-wide', {
     // Optional parameters
     direction: 'horizontal',
@@ -49,6 +50,7 @@ $(".swiper-wide").mouseleave(function () {
 
 
 
+// 大家都愛聽 輪播圖
 var wantedSwiper = new Swiper(".wanted-list-sidler", {
     grabCursor: true,
     loop: true,
@@ -94,7 +96,7 @@ var wantedSwiper = new Swiper(".wanted-list-sidler", {
 
 
 
-let isCellphone;
+// 關於我們 輪播圖
 const aboutswiper = new Swiper('.about-swiper', {
     slidesPerView: 'auto',
     // centeredSlides: true,
@@ -110,15 +112,17 @@ const aboutswiper = new Swiper('.about-swiper', {
     }
 });
 
+
 window.addEventListener('DOMContentLoaded', () => {
     let w = window.innerWidth
-    if (w <= 960) {
+    if (w <= 960 ) {
         aboutswiper.enable();
         aboutswiper.init()
-    } else if (w > 960) {
+        isCellphone = true
+    } else if (w > 960 ) {
         aboutswiper.destroy(false, true)
         aboutswiper.disable();
-
+        isCellphone = false
         document.querySelector('.about-wrapper.swiper-wrapper').style.transform = `translate3d(0px, 0px, 0px)`
     }
 })
@@ -127,7 +131,6 @@ window.addEventListener('resize', () => {
     if (w <= 960) {
         aboutswiper.enable();
         aboutswiper.init()
-        isCellphone = false
     } else if (w > 960) {
         aboutswiper.disable();
         aboutswiper.destroy(false, true)

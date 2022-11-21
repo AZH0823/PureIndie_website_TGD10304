@@ -295,48 +295,52 @@
         </footer>
         <!-- mediaplayer -->
         <div id="media-player">
-            <div id="player">
-                <div id="player-track" class="active">
-                    <div id="track-name">我好想睡</div>
-                    <div id="band-name">美秀集團</div>
-                    <div id="time">
-                        <span>0:00</span>
-                        <input type="range" id="track-length" name="track-length" min="0" max="300">
-                        <span>5:00</span>
-                    </div>
-                </div>
-                <div id="player-content">
-                    <div id="ablumn-cover">
-                        <img src="./img/ablumn_cover01.jpg" alt="">
-                    </div>
-                    <div id="player-control">
-                        <div class="control">
-                            <div class="btn">
-                                <i class="fa-solid fa-backward"></i>
-                            </div>
-                        </div>
-                        <div class="control">
-                            <!-- stop icon  -->
-                            <!-- <i class="fa-solid fa-pause"></i>-->
-                            <!-- active icon -->
-                            <div class="bun">
-                                <i class="fa-solid fa-play"></i>
-                            </div>
-                        </div>
-                        <div class="control">
-                            <div class="btn">
-                                <i class="fa-solid fa-forward"></i>
-                            </div>
-                        </div>
-                    </div>
+        <div id="player">
+            <div id="player-track" class="">
+                <div id="track-name"></div>
+                <div id="band-name"></div>
+                <div id="track-time">
+                    <span>0:00</span>
+                    <input type="range" id="track-length" name="track-length"
+                    min="0"  max="100" step="1" >
+                    <span id ="">5:00</span>
                 </div>
             </div>
+            <div id="player-content">
+                <div id="album-cover">
+                    <img src="./img/ablumn_cover01.jpg" alt="" data-id="_1" class="active">
+                    <img src="./img/ablumn_cover02.jpg" alt="" data-id="_2">
+                    <img src="./img/ablumn_cover03.jpg" alt="" data-id="_3">
+                    <img src="./img/ablumn_cover02.jpg" alt="" data-id="_4">
+                    <img src="./img/ablumn_cover01.jpg" alt="" data-id="_5">
+                </div>
+                <div id="player-control">
+                    <div class="control">
+                        <div class="btn" id="play-previous">
+                            <i class="fa-solid fa-backward"></i>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div id="play-pause-button">
+                            <!-- active icon -->
+                            <!-- <i class="fa-solid fa-play"></i> -->
+                            <!-- stop icon  -->
+                            <i class="fa-solid fa-pause"></i>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="btn" id="play-next">
+                            <i class="fa-solid fa-forward"></i>
+                        </div>
+                    </div>
+            </div>
         </div>
-        
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
         crossorigin="anonymous"></script>
     <script src="./JS/collapseCtrol.js"></script>
     <script src="./JS/addClassName.js"></script>
+    <script src="./JS/mediaPlayer.js"></script>
 </body>
 
 </html>
