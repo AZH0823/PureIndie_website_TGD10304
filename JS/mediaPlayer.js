@@ -33,11 +33,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
       "Jason Farnham"
     ],
     trackUrl = [
-      "../music/Forgiven Fate - Dan Lebowitz.mp3",
-      "../music/Just Stay - Aakash Gandhi.mp3",
-      "../music/Large Smile Mood - Nico Staf.mp3",
-      "../music/Miss You Love - Patiño.mp3",
-      "../music/Wedding Invitation - Jason Farnham.mp3"
+      "./music/Forgiven Fate - Dan Lebowitz.mp3",
+      "./music/Just Stay - Aakash Gandhi.mp3",
+      "./music/Large Smile Mood - Nico Staf.mp3",
+      "./music/Miss You Love - Patiño.mp3",
+      "./music/Wedding Invitation - Jason Farnham.mp3"
     ],
     playPreviousTrackButton = document.querySelector("#play-previous"),
     playNextTrackButton = document.querySelector("#play-next"),
