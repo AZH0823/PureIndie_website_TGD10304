@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const bandName = document.querySelector("#band-name")
   const albumCover = document.querySelector("#album-cover");
   const playertime = document.querySelector('#track-time');
-  let audio = new Audio()
+  let audio = document.querySelector('#audio')
  
   const playPauseButton = document.querySelector('#play-pause-button');
   // 0 :  playButton play icon  .2 PauseButton Pause icon
