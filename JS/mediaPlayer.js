@@ -91,7 +91,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
       playProgress = 0
     } 
     
-    console.log(playProgress)
     playertime.children[0].textContent = curMinutes.toString() + ":" + curSeconds.toString()
     playertime.children[1].value = playProgress
     playertime.children[2].textContent = durMinutes.toString() + ":" + durSeconds.toString()
