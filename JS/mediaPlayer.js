@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const bandName = document.querySelector("#band-name")
   const albumCover = document.querySelector("#album-cover");
   const playertime = document.querySelector('#track-time');
-  let audio = document.querySelector('#audio')
+  let audio = document.querySelector('#media-player #audio')
  
   const playPauseButton = document.querySelector('#play-pause-button');
   // 0 :  playButton play icon  .2 PauseButton Pause icon
@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     playPreviousTrackButton = document.querySelector("#play-previous"),
     playNextTrackButton = document.querySelector("#play-next"),
     currIndex = -1;
+    
   function playPause(){
     // console.log(`play or pause`)
     setTimeout(function(){
@@ -96,6 +97,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     playertime.children[2].textContent = durMinutes.toString() + ":" + durSeconds.toString()
   }
 
+  
   function selectTrack(flag) {
  
     flag === 0 || flag === 1 ?　currIndex++　: currIndex--
@@ -125,7 +127,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
       let currtrackNames = trackNames[currIndex];
       let currbandNames = bandNames[currIndex];
       let currArtwork = albumOrderList[currIndex];
-      audio.src = trackUrl[currIndex];
+    
+      audio.src = trackUrl[currIndex]
 
       // 開啟撥放器,將上半部啟動
       if (flag != 0) {

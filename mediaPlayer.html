@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +9,18 @@
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="/CSS/rootManger.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./CSS/section_blcok/mediaPlayer.css">
     <style>
-        body{
+        body {
             background-color: black;
         }
     </style>
 </head>
+
 <body>
-    
+
     <div id="media-player">
         <div id="player">
             <div id="player-track" class="">
@@ -26,9 +28,8 @@
                 <div id="band-name"></div>
                 <div id="track-time">
                     <span>0:00</span>
-                    <input type="range" id="track-length" name="track-length"
-                    min="0"  max="100" step="1" >
-                    <span id ="">5:00</span>
+                    <input type="range" id="track-length" name="track-length" min="0" max="100" step="1">
+                    <span id="">5:00</span>
                 </div>
                 <audio src="./music/Forgiven Fate - Dan Lebowitz.mp3" id="audio"></audio>
             </div>
@@ -59,9 +60,11 @@
                             <i class="fa-solid fa-forward"></i>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
     </div>
     <script src="./JS/mediaPlayer.js"></script>
 </body>
+
 </html>

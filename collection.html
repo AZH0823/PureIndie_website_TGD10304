@@ -294,17 +294,17 @@
         
         </footer>
         <!-- mediaplayer -->
-        <div id="media-player">
+         <div id="media-player">
         <div id="player">
             <div id="player-track" class="">
                 <div id="track-name"></div>
                 <div id="band-name"></div>
                 <div id="track-time">
                     <span>0:00</span>
-                    <input type="range" id="track-length" name="track-length"
-                    min="0"  max="100" step="1" >
-                    <span id ="">5:00</span>
+                    <input type="range" id="track-length" name="track-length" min="0" max="100" step="1">
+                    <span id="">5:00</span>
                 </div>
+                <audio src="./music/Forgiven Fate - Dan Lebowitz.mp3" id="audio"></audio>
             </div>
             <div id="player-content">
                 <div id="album-cover">
@@ -333,14 +333,17 @@
                             <i class="fa-solid fa-forward"></i>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
     </div>
+    
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
         crossorigin="anonymous"></script>
+    <script src="./JS/mediaPlayer.js"></script>
     <script src="./JS/collapseCtrol.js"></script>
     <script src="./JS/addClassName.js"></script>
-    <script src="./JS/mediaPlayer.js"></script>
 </body>
 
 </html>
