@@ -89,12 +89,14 @@
  
   max-width: 400px;
   width: 50%;
-  margin-right: 2rem;
+  margin: 0 1rem;
+ 
   border-radius: 3px;
-
+  min-height: 250px;
+  object-fit: cover;
 }
 .newstList-card .card-loream{
-  padding: 20px 20px 20px 20px;
+  padding: 0px 0px 0px 20px;
 }
 .card-loream{
   float: left;
@@ -103,8 +105,8 @@
 }
 
 .newstList-card .card-loream h2{
-    
-    text-overflow:clip;
+    line-height: 30px;
+    /* text-overflow:clip; */
     text-align: justify;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -118,6 +120,7 @@
   color:var(--non-notice-color)
 }
 .card-loream p{
+  margin-top: 1rem;
   margin-bottom: 2rem;
 
   overflow: hidden;
@@ -126,6 +129,7 @@
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+
 }
 
 .card-loream .newstList-icons{
@@ -213,10 +217,6 @@
 
 
 @media screen and (max-width:1280px) {
-  .card-loream p{
-    -webkit-line-clamp: 2;
-  }
-
   .newActivy .newstions h1::after{
     width: 70%;
   }
@@ -235,15 +235,30 @@
   .card-loream{
     display: block;
     width: 92.5%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
 }
-
-@media screen and ( max-width:414px ) {
-  .newstList-card .card-loream{
-    padding: 20px 20px 0px 20px;
+@media screen and (max-width:700px) {
+  .newstList-card img{
+    float: none;
   }
+  .newstList-card .card-loream{
+    padding: 20px 3.5%;
+  }
+}
+@media screen and ( max-width:414px ) {
+
   .newActivy .newstions h1{
     margin: 1.5rem 0 2rem;
+  }
+  .newstList-card{
+    padding: 0 20px;
+  }
+  .newstList-card .card-loream {
+    padding: 0px 3.5% 10px;
+}
+  .newstList-card img{
+    object-fit: contain;
+    min-height: 210px;
   }
 }

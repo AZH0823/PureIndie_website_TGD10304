@@ -202,7 +202,7 @@ li.wanted-listcard:hover{
   font-size: var(--CHfs-16px);
   margin: 20px 0;
   color: var(--black-color);
-  min-height: 48px;
+  min-height: 46px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
