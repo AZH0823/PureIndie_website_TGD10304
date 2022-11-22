@@ -138,6 +138,9 @@
   .activity-list{
     gap: 2.8rem;
   }
+    .activity-title .more{
+    margin-right: clamp(0% ,100% , 5px);
+  }
 }
 @media screen and (max-width:1400px) {
   .activity-list {

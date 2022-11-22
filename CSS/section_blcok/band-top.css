@@ -128,7 +128,10 @@
     gap: 1.1rem;
     justify-content: space-between;
   }
-
+  .band-top .more,
+  .motion .more{
+      margin-right: clamp(2% ,100% , 5px);
+  }
 
 }
 
