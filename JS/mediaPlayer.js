@@ -32,11 +32,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
       "To The Valley"
     ],
     trackUrl = [
-      "./music/01-Eldar Kedem - Ocean in Motion.mp3",
-      "./music/02-Floating World - Damned.mp3",
-      "./music/03-Hydromag - I Need to Know.mp3",
-      "./music/04-Lone Wild - Danger Cat.mp3",
-      "./music/05-To The Valley - Be Bold, Be Brave.mp3"
+      "./music/EldarKedem-OceaninMotion.mp3",
+      "./music/FloatingWorld-Damned.mp3",
+      "./music/HydromagINeedtoKnow.mp3",
+      "./music/LoneWild-DangerCat.mp3",
+      "./music/ToTheValley-BeBoldBeBrave.mp3"
     ],
     playPreviousTrackButton = document.querySelector("#play-previous"),
     playNextTrackButton = document.querySelector("#play-next"),
