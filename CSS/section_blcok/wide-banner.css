@@ -8,7 +8,7 @@
   
 }
 .wide-banner.newsEvet{
-  background-image: url(../../img/Aboutus/wideBanner_aboutus.png);
+  background-image: url(../../img/Aboutus/wideBanner_aboutus02.jpg);
 }
 .wide-banner.newsEventDetail{
   background-image: url(../../img/Aboutus/wideBanner_aboutus.png);
@@ -27,6 +27,12 @@
   background-image: url(../../img/Aboutus/wideBanner_collection.png);
 }
 
+
+@media screen and (max-width: 720px) {
+  .wide-banner.newsEvet{
+    
+  }
+}
 
 
 

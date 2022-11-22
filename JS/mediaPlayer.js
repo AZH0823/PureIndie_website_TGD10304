@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', (event) => {
   // media 上半部介面控制
   let playerTrack = document.querySelector("#player-track");
-
   const trackName = document.querySelector("#track-name");
   const bandName = document.querySelector("#band-name")
   const albumCover = document.querySelector("#album-cover");
@@ -19,25 +18,25 @@ document.addEventListener('DOMContentLoaded', (event) => {
     playProgress,
     albumOrderList = ["_1", "_2", "_3", "_4", "_5"],
     trackNames = [
-      "Forgiven Fate",
-      "Just Stay",
-      "Large Smile Mood",
-      "Miss You Love",
-      "Wedding Invitation"
+      "Ocean in Motion",
+      "Floating World",
+      "Need to Know",
+      "Danger Cat",
+      "Be Bold, Be Brave."
     ],
     bandNames = [
-      "Dan Lebowitz",
-      "Aakash Gandhi",
-      "Nico Staf",
-      "Patiño",
-      "Jason Farnham"
+      "Eldar Kedem",
+      "Aakash Damned",
+      "Hydromag",
+      "Lone Wild",
+      "To The Valley"
     ],
     trackUrl = [
-      "./music/Forgiven Fate - Dan Lebowitz.mp3",
-      "./music/Just Stay - Aakash Gandhi.mp3",
-      "./music/Large Smile Mood - Nico Staf.mp3",
-      "./music/Miss You Love - Patiño.mp3",
-      "./music/Wedding Invitation - Jason Farnham.mp3"
+      "./music/01-Eldar Kedem - Ocean in Motion.mp3",
+      "./music/02-Floating World - Damned.mp3",
+      "./music/03-Hydromag - I Need to Know.mp3",
+      "./music/04-Lone Wild - Danger Cat.mp3",
+      "./music/05-To The Valley - Be Bold, Be Brave.mp3"
     ],
     playPreviousTrackButton = document.querySelector("#play-previous"),
     playNextTrackButton = document.querySelector("#play-next"),

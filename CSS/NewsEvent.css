@@ -110,6 +110,9 @@ main.newsEvent p{
     section {
         padding: 15px 0;
     }
+    main.newsEvent h2{
+      font-size: 18px;
+    }
 }
 
 @media screen and (max-width:414px) {
@@ -120,4 +123,6 @@ main.newsEvent p{
     .newActivy{
       padding: 0 5%;
     }
+
+ 
 }
